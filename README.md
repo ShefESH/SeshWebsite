@@ -1,5 +1,7 @@
 # shefesh-site
-Static site for the Sheffield Ethical Student Hackers Society. Built with Jekyll
+Static site for the Sheffield Ethical Student Hackers Society
+
+Built with [Jekyll](https://jekyllrb.com/)
 
 ## Setup
 
@@ -33,7 +35,7 @@ If bundler is set up correctly, you should be able to omit 'bundle exec' from th
 
 To run the above with one command, add the following alias to your *.bashrc* (or equivalent)
 
-alias serve='cd /path/to/shefesh-site/shefesh-site; jekyll build; jekyll serve'
+`alias serve='cd /path/to/shefesh-site/shefesh-site; jekyll build; jekyll serve'`
 
 **Navigate to site in browser**
 
