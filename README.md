@@ -87,7 +87,7 @@ Other stylesheets in the _sass folder can be imported into here e.g. by
 
 ### _sass
 
-Stylesheets for site, to be imported into *styles.scss*
+Stylesheets for site, to be imported into *assets/css/main.scss*
 
 ## Using Liquid
 
