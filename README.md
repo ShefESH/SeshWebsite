@@ -51,9 +51,21 @@ All code for the site is stored in the child *shefesh-site* directory
 
 Content to be included in pages. Similar to partials in Rails
 
+Include the html/markdown content in a html/markdown page using `{% include filename.extension %}`
+
 ### _layouts
 
 Liquid page templates. Can contain liquid logic as well as objects
+
+Layouts specify the general template of the page, and can be reused. The {{ content }} liquid variable refers to the content of the top-level page (e.g. index.html)
+
+Use a layout in a top-level page by referencing it in the front matter e.g.
+
+```
+---
+layout: default
+---
+```
 
 ### _posts
 
