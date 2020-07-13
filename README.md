@@ -1,5 +1,5 @@
 # shefesh-site
-Static site for the Sheffield Ethical Student Hackers Society
+Static site for the Sheffield Ethical Student Hackers Society. Built with Jekyll
 
 ## Setup
 
@@ -57,7 +57,7 @@ Include the html/markdown content in a html/markdown page using `{% include file
 
 Liquid page templates. Can contain liquid logic as well as objects
 
-Layouts specify the general template of the page, and can be reused. The {{ content }} liquid variable refers to the content of the top-level page (e.g. index.html)
+Layouts specify the general template of the page, and can be reused. The `{{ content }}` liquid variable refers to the content of the top-level page (e.g. index.html)
 
 Use a layout in a top-level page by referencing it in the front matter e.g.
 
