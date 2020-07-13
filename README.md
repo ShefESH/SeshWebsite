@@ -78,3 +78,13 @@ Content for blog posts
 ### _sass
 
 Stylesheets for site, to be imported into *styles.scss*
+
+## Using Liquid
+
+### Variables
+
+Use double curly brackets `{{ }}` to reference variables
+
+### Ruby Code (I think)
+
+Write Ruby code contained in brackets as so `{% %}
