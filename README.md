@@ -27,7 +27,7 @@ Make sure you are in the child directory (*shefesh-site/shefesh-site*) when you 
 
 The serve command builds the site automatically. You can build it manually without serving the site by running
 
-`bundle exec jekyll serve`
+`bundle exec jekyll build`
 
 If bundler is set up correctly, you should be able to omit 'bundle exec' from these commands
 
@@ -49,11 +49,15 @@ All code for the site is stored in the child *shefesh-site* directory
 
 *_site* and *jekyll-cache* directories are excluded by gitignore - these will be generated locally when running `jekyll serve`
 
+### pages
+
+Pages are stored in the top level of the *shefesh-site/shefesh-site* directory, and can be written in either HTML or Markdown
+
 ### _includes
 
 Content to be included in pages. Similar to partials in Rails
 
-Include the html/markdown content in a html/markdown page using `{% include filename.extension %}`
+Include the HTML/Markdown content in a HTML/Markdown page using `{% include filename.extension %}`
 
 ### _layouts
 
@@ -77,6 +81,10 @@ Content for blog posts
 
 *css* directory contains *styles.scss*, which serves as the main stylesheet for the site
 
+Other stylesheets in the _sass folder can be imported into here e.g. by
+
+`@import "main";`
+
 ### _sass
 
 Stylesheets for site, to be imported into *styles.scss*
@@ -89,4 +97,4 @@ Use double curly brackets `{{ }}` to reference variables
 
 ### Ruby Code (I think)
 
-Write Ruby code contained in brackets as so `{% %}
+Write Ruby code contained in brackets as so `{% %}`
