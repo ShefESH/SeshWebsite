@@ -1,5 +1,8 @@
-$backgroundColor: #ffffff;
-$bodyColor: #000000;
+$backgroundColor: #1c1e29;
+$backgroundColorLight: #33354b;
+$bodyColor: #fff;
+$pinkColor: #eb3c68;
+$lightBlue: #00e7e7;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
 body {
@@ -14,14 +17,16 @@ body {
 .wrapper {
   height: 100%;
   width: 100%;
+  background-color: £$backgroundColor
 }
 
 .banner {
   width: 100%;
-  background-color: rgb(181, 181, 181);
+  background-color: $backgroundColorLight;
   padding: 0;
   margin: 0;
   border: 0;
+  border-radius: 5px;
 }
 
 .banner h1 {
@@ -33,20 +38,23 @@ body {
 }
 
 .banner h1 a {
+  outline : none;
   text-decoration: none;
-  color: black;
+  color: $pinkColor;
 }
 
 .banner h1 a:visited {
-  color: black;
+  color: white;
 }
 
 .nav {
   width: 100%;
-  background-color: black;
+  background-color: $backgroundColorLight;
   padding: 0;
   margin: 0;
   border: 0;
+  border-radius: 5px;
+
 }
 
 .nav ul {
@@ -56,15 +64,16 @@ body {
 }
 
 .nav ul a {
+  outline : none;
   text-decoration: none;
-  color: white;
+  color: $lightBlue;
   display: inline-block;
   padding: 0.3%;
   margin: 0.25em 0 0.25em 1.1%;
 }
 
 .nav ul a:visited {
-  color: white;
+  color: $lightBlue;
 }
 
 main {
