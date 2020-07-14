@@ -5,5 +5,8 @@
         <h4>{{ include.name }}</h4>
     
         <p>{{ include.bio }}</p>
+    
+        {% capture path %}/assets/images/committee/{{ include.image-name }}{% endcapture %}
+        <img src="{{ path }}">
     </div>
 </div>
