@@ -11,7 +11,15 @@ To host this website locally, follow these steps
 
 `git clone git@github.com:Twigonometry/shefesh-site.git`
 
+**Install Ruby:**
+
+Skip this step if you have it already. Tested with Ruby Version 2.6.2
+
+`sudo apt-get install ruby-full`
+
 **Install Jekyll:**
+
+Skip this step if you have it already. Tested with Jekyll Version 4.1.1
 
 `gem install bundler jekyll`
 
