@@ -3,4 +3,15 @@ $backgroundColorLight: #33354b;
 .committee-profile {
     width: 25%;
     background-color: $backgroundColorLight;
+    display: flex;
+}
+
+.committee-profile .text {
+    margin: 3%;
+}
+
+.committee-profile img {
+    width: 55%;
+    height: 60%;
+    margin: 4%;
 }
