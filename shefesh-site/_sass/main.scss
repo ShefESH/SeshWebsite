@@ -90,3 +90,34 @@ main a {
 main a:visited {
   color: $lightBlue
 }
+
+main h2 {
+  color: $pinkColor;
+  text-align: center;
+}
+
+/*
+credit for below code snippet:
+https://stackoverflow.com/questions/2812770/add-centered-text-to-the-middle-of-a-hr-like-line
+*/
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.separator::before, .separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid $pinkColor;
+}
+.separator::before {
+  margin-right: .25em;
+}
+.separator::after {
+  margin-left: .25em;
+}
+
+/*
+end of code snippet
+*/
