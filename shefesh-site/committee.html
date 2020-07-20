@@ -7,18 +7,21 @@ title: Committee
     <h2>Committee</h2>
     <hr>
 </div>
-<p>Meet the committee!</p>
 
-{% for item in site.committee %}
-    <div class="committee-profile">
-        <div class="text">
-            <h3>{{ item.role }}</h3>
-            <h4>{{ item.name }}</h4>
-            <p>{{ item.bio }}</p>
+<h3>Meet the committee!</h3>
+
+<div id="profiles">
+    {% for item in site.committee %}
+        <div class="committee-profile">
+            <div class="text">
+                <h3>{{ item.role }}</h3>
+                <h4>{{ item.name }}</h4>
+                <p>{{ item.bio }}</p>
+            </div>
+            {% capture path %}
+                /assets/images/committee/{{ item.image-name }}
+            {% endcapture %}
+            <img src="{{ path }}">
         </div>
-        {% capture path %}
-            /assets/images/committee/{{ item.image-name }}
-        {% endcapture %}
-        <img src="{{ path }}">
-    </div>
-{% endfor %}
+    {% endfor %}
+</div>

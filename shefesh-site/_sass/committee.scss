@@ -1,9 +1,14 @@
 $backgroundColorLight: #33354b;
 
+#profiles {
+    display: inline;
+}
+
 .committee-profile {
     width: 25%;
     background-color: $backgroundColorLight;
     display: flex;
+    margin: 4% 6%;
 }
 
 .committee-profile .text {
@@ -14,4 +19,8 @@ $backgroundColorLight: #33354b;
     width: 55%;
     height: 60%;
     margin: 4%;
+}
+
+main h3 {
+    text-align: center;
 }
