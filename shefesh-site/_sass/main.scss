@@ -80,3 +80,13 @@ main {
   padding: 0.3%;
   margin: 0 1.1%;
 }
+
+main a {
+  outline : none;
+  text-decoration: none;
+  color: $lightBlue
+}
+
+main a:visited {
+  color: $lightBlue
+}
