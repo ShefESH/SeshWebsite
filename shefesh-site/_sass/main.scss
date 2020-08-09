@@ -77,6 +77,43 @@ body {
   color: $lightBlue;
 }
 
+nav .dropbtn {
+  background-color: $backgroundColorLight;
+  color: $lightBlue;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $backgroundColorLight;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  padding: 10px 0px 10px 7px;
+  text-decoration: none;
+  display: block;
+}
+
+nav .dropdown-content a:hover {
+    background-color: $backgroundColor
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
 main {
   padding: 0.3%;
   margin: 0 1.1%;

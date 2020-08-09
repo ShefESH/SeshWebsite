@@ -5,14 +5,12 @@ custom_css: wiki
 ---
 
 <div class="subpage_banner">
-    <div class="separator"><h2>Wiki</h2></div>
+    <div class="separator"><h2>Wiki - Sessions</h2></div>
 </div>
 
-<h3 class="title-center">Past session presentations and useful links!</h3>
+<h3 class="title-center">Past session presentations!</h3>
 
 <div id="sessions">
-    <!-- {% assign sorted = site.wiki | sort: 'date | date:"%y"' %} -->
-    {% assign lastDate = 0 %}
 
     {% for item in site.wiki %}
         {% assign currentDate = item.date | date: '%y' %}
@@ -20,7 +18,6 @@ custom_css: wiki
             <div class="heading"><h3>Year 20{{ currentDate }}</h3></div>
         {% endif %}
         {% assign lastDate = currentDate %}
-        <!-- {{ lastDate }} -->
         <div class="session">
             {% capture path %}
                 /assets/wiki/{{ item.file-name }}
