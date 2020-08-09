@@ -5,3 +5,5 @@ title: "Sheffield Ethical Student Hackers" # the name of your site, e.g. ACME Co
 collections:
   committee:
     output: true
+  wiki:
+    output: true
