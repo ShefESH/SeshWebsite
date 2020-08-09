@@ -5,3 +5,9 @@ title: "Sheffield Ethical Student Hackers" # the name of your site, e.g. ACME Co
 collections:
   committee:
     output: true
+  other-opps:
+    output: true
+  priv-sector:
+    output: true
+  pub-sector:
+    output: true
