@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Opportunities
+custom_css: opportunities
 ---
 <div class="subpage_banner">
     <div class="separator"><h2>Opportunities</h2></div>
@@ -15,6 +16,18 @@ title: Opportunities
 {% if site.pub-sector == empty %}
 There are currently no public sector opportunities - check back later!
 {% else %}
+<div class="opportunities">
+    {% for item in site.pub-sector %}
+        <div class="opp">
+            <div class="text">
+                <h4><a href="{{ item.link }}"> {{ item.host }} </a></h4>
+                <p>Type: {{ item.type }}</p>
+                <p>Location: {{ item.location }}</p>
+                <p>Deadline: {{ item.deadline }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
 {% endif %}
 
 <div class="separator"><h2>Private Sector</h2></div>
@@ -22,6 +35,18 @@ There are currently no public sector opportunities - check back later!
 {% if site.priv-sector == empty %}
 There are currently no private sector opportunities - check back later!
 {% else %}
+<div class="opportunities">
+    {% for item in site.priv-sector %}
+        <div class="opp">
+            <div class="text">
+                <h4><a href="{{ item.link }}">{{ item.host }}</a></h4>
+                <p>Type: {{ item.type }}</p>
+                <p>Location: {{ item.location }}</p>
+                <p>Deadline: {{ item.deadline }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
 {% endif %}
 
 <div class="separator"><h2>Other</h2></div>
@@ -29,4 +54,16 @@ There are currently no private sector opportunities - check back later!
 {% if site.other-opps == empty %}
 There are currently no other opportunities - check back later!
 {% else %}
+<div class="opportunities">
+    {% for item in site.other-opps %}
+        <div class="opp">
+            <div class="text">
+                <h4><a href="{{ item.link }}"> {{ item.host }} </a></h4>
+                <p>Type: {{ item.type }}</p>
+                <p>Location: {{ item.location }}</p>
+                <p>Deadline: {{ item.deadline }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
 {% endif %}
