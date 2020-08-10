@@ -14,7 +14,7 @@ custom_css: careers
 {% if site.sponsor-partners != empty %}
 <div class="separator"><h2>Sponsors</h2></div>
 
-<div class="features">
+<div class="features" id="sponsors">
     {% for item in site.sponsors %}
         <div class="feature">
             <div class="text">
@@ -31,7 +31,7 @@ custom_css: careers
 {% if site.ind-partners != empty %}
 <div class="separator"><h2>Industry Partners</h2></div>
 
-<div class="features">
+<div class="features" id="industry">
     {% for item in site.ind-partners %}
         <div class="feature">
             <div class="text">
@@ -49,7 +49,7 @@ custom_css: careers
 {% if site.soc-partners != empty %}
 <div class="separator"><h2>Society Partners</h2></div>
 
-<div class="features">
+<div class="features" id="societies">
     {% for item in site.soc-partners %}
         <div class="feature">
             <div class="text">
