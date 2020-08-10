@@ -16,9 +16,9 @@ custom_css: opportunities
 {% if site.pub-sector == empty %}
 There are currently no public sector opportunities - check back later!
 {% else %}
-<div class="opportunities">
+<div class="features">
     {% for item in site.pub-sector %}
-        <div class="opp">
+        <div class="feature">
             <div class="text">
                 <h4><a href="{{ item.link }}"> {{ item.host }} </a></h4>
                 <p>Type: {{ item.type }}</p>
@@ -35,9 +35,9 @@ There are currently no public sector opportunities - check back later!
 {% if site.priv-sector == empty %}
 There are currently no private sector opportunities - check back later!
 {% else %}
-<div class="opportunities">
+<div class="features">
     {% for item in site.priv-sector %}
-        <div class="opp">
+        <div class="feature">
             <div class="text">
                 <h4><a href="{{ item.link }}">{{ item.host }}</a></h4>
                 <p>Type: {{ item.type }}</p>
@@ -54,9 +54,9 @@ There are currently no private sector opportunities - check back later!
 {% if site.other-opps == empty %}
 There are currently no other opportunities - check back later!
 {% else %}
-<div class="opportunities">
+<div class="features">
     {% for item in site.other-opps %}
-        <div class="opp">
+        <div class="feature">
             <div class="text">
                 <h4><a href="{{ item.link }}"> {{ item.host }} </a></h4>
                 <p>Type: {{ item.type }}</p>

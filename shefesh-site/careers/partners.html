@@ -1,0 +1,64 @@
+---
+layout: default
+title: Partners
+custom_css: careers
+---
+<div class="subpage_banner">
+    <div class="separator"><h2>Partners</h2></div>
+</div>
+
+<p>This page contains a list of all of our society's sponsors, and other companies that have asked to be featured on our page</p>
+
+<p>These companies are all excellent places to apply for a cybersecurity career, so keep an eye out for opportunities posted by them and feel free to get in touch via the listed contact details</p>
+
+{% if site.sponsor-partners != empty %}
+<div class="separator"><h2>Sponsors</h2></div>
+
+<div class="features">
+    {% for item in site.sponsors %}
+        <div class="feature">
+            <div class="text">
+                <h4><a href="{{ item.link }}"> {{ item.name }} </a></h4>
+                <p>{{ item.bio }}</p>
+                <p>Location: {{ item.location }}</p>
+                <p>Contact: {{ item.contact }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+{% if site.ind-partners != empty %}
+<div class="separator"><h2>Industry Partners</h2></div>
+
+<div class="features">
+    {% for item in site.ind-partners %}
+        <div class="feature">
+            <div class="text">
+                <h4><a href="{{ item.link }}"> {{ item.name }} </a></h4>
+                <p>{{ item.bio }}</p>
+                <p>Location: {{ item.location }}</p>
+                <p>Contact: {{ item.contact }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+
+{% if site.soc-partners != empty %}
+<div class="separator"><h2>Society Partners</h2></div>
+
+<div class="features">
+    {% for item in site.soc-partners %}
+        <div class="feature">
+            <div class="text">
+                <h4><a href="{{ item.link }}"> {{ item.name }} </a></h4>
+                <p>{{ item.bio }}</p>
+                <p>Location: {{ item.location }}</p>
+                <p>Contact: {{ item.contact }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endif %}

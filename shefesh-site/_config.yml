@@ -11,3 +11,9 @@ collections:
     output: true
   pub-sector:
     output: true
+  ind-partners:
+    output: true
+  soc-partners:
+    output: true
+  sponsors:
+    output: true
