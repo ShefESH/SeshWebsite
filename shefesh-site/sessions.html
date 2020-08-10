@@ -1,9 +1,19 @@
 ---
 layout: default
 title: Sessions
+custom_css: sessions
 ---
 
 <div class="subpage_banner">
     <div class="separator"><h2>Sessions</h2></div>
 </div>
-<p>Details of our sessions will be added here, as well as a schedule nearer the start of term</p>
+
+<div id="sessions">
+    {% for item in site.sessions %}
+    <div class="session">
+        <h3>{{ item.date | date_to_string }} – {{ item.title }}</h3>
+        <h4>Presented by {{ item.presenter }}</h4>
+        <p>{{ item.description }}</p>
+    </div>
+    {% endfor %}
+</div>

@@ -7,3 +7,5 @@ collections:
     output: true
   wiki:
     output: true
+  sessions:
+    output: true

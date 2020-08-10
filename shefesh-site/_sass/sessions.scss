@@ -1,0 +1,19 @@
+$backgroundColorLight: #33354b;
+$lightBlue: #00e7e7;
+
+.session {
+    background-color: $backgroundColorLight;
+    margin: 2% 0%;
+    padding: 0.6em;
+    width: 75%;
+    min-width: 370px;
+    border-radius: 4px;
+}
+
+.session h3, h4 {
+    margin: 0;
+}
+
+.session p {
+    margin-bottom: 0;
+}
