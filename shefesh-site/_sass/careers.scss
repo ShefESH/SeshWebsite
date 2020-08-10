@@ -1,0 +1,16 @@
+$backgroundColorLight: #33354b;
+
+.features {
+    display: inline;
+}
+
+.feature {
+    width: 25%;
+    background-color: $backgroundColorLight;
+    display: flex;
+    margin: 4% 6%;
+}
+
+.feature .text h4, p {
+    padding-left: 3%;
+}
