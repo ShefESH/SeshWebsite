@@ -17,3 +17,5 @@ collections:
     output: true
   sponsors:
     output: true
+  wiki:
+    output: true

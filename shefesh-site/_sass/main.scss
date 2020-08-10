@@ -11,7 +11,11 @@ body {
   font-family: $bodyFont;
   height: 100%;
   width: 100%;
-  margin: 0;
+  margin: 0
+}
+
+#indexBody{
+  padding: 1em;
 }
 
 .wrapper {
@@ -26,7 +30,6 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
-  border-radius: 5px;
 }
 
 .banner h1 {
@@ -53,8 +56,6 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
-  border-radius: 5px;
-
 }
 
 .nav ul {
