@@ -2,15 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .committee-profile {
-    width: 25%;
+    width: 20%;
     min-width: 370px;
     background-color: $backgroundColorLight;
     display: flex;
-    margin: 2% 3%;
-    padding: 0.1em;
+    margin: 2% 10px;
     border-radius: 4px;
 }
 
@@ -26,6 +26,7 @@
     max-height: 250px;
     border-radius: 2px;
     margin:0.7em 0.3em;
+    object-fit: cover;
 }
 
 .committee-profile h3 {
