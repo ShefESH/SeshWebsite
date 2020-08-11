@@ -10,9 +10,16 @@
     <div class="wrapper">
       {% include banner.html %}
       {% include nav.html %}
-      <main>
+      {% if page.title %}
+      <div class="subpage_banner">
+        <div class="separator">
+          <h2>{{ page.title }}</h2>
+        </div>
+      </div>
+      {% endif %}
+      <div class="content-wrapper">
           {{ content }}
-      </main>
+      </div>
     </div>
   </body>
 </html>
