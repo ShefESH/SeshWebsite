@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Wiki
-custom_css: wiki
+custom_css: wikisessions
 ---
 
 <div class="subpage_banner">
@@ -12,10 +12,10 @@ custom_css: wiki
 
 <div id="sessions">
 
-    {% for item in site.wiki %}
+    {% for item in site.sessions %}
         {% assign currentDate = item.date | date: '%y' %}
         {% if lastDate != currentDate %}
-            <div class="heading"><h3>Year 20{{ currentDate }}</h3></div>
+            <div class="heading"><h3>Year 20{{ currentDate }}/{{ currentDate | plus: 1 }}</h3></div>
         {% endif %}
         {% assign lastDate = currentDate %}
         <div class="session">
