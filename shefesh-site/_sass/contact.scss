@@ -1,22 +1,45 @@
-.contact-card{
-    width: 25%;
-    //min-width: 370px;
-    min-height: 200px;
-    background-color: $backgroundColorLight;
-    display: flex;
-    margin: 2% 3%;
-    padding: 0.1em;
-    border-radius: 4px;
-    display: inline-block;
-}
-
 img {
-    padding: 10px;
+    margin: 10px 25px;
     height: 72px;
 }
 
-.inclusions {
-    background-color: $backgroundColorLight;
-    border-radius: 4px;
+.social-media{
+    text-align: center;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+}
 
+.mail-inclusions {
+    padding: 2.5rem 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+    border-left-color: $lightBlue;
+}
+
+.mail-general {
+    padding: 2.5rem 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+    border-left-color: $pinkColor;
+}
+
+.mail-content {
+    display: inline-block;
+    padding-left: 5%;
+}
+
+.heading {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: $pinkColor;
 }
