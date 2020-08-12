@@ -13,6 +13,8 @@ collections:
     output: true
   ind-partners:
     output: true
+  resources:
+    output: true
   soc-partners:
     output: true
   sponsors:

@@ -4,16 +4,17 @@ title: Sessions
 custom_css: sessions
 ---
 
-<div class="subpage_banner">
-    <div class="separator"><h2>Sessions</h2></div>
-</div>
-
 <div id="sessions">
     {% for item in site.sessions %}
+    {% assign currentSection = item.path | split: "/" %}
+    {% if lastSection != currentSection[1] %}
+        <div class="heading"><h3>{{ currentSection[1] }}</h3></div>
+    {% endif %}
+    {% assign lastSection = currentSection[1] %}
     <div class="session">
-        <h3>{{ item.date | date_to_string }} – {{ item.title }}</h3>
-        <h4>Presented by {{ item.presenter }}</h4>
-        <p>{{ item.description }}</p>
+        <h4>{{ item.date | date_to_string }} – {{ item.title }}</h3>
+        <h5>Presented by {{ item.presenter }}</h4>
+        <p>{{ item.content }}</p>
     </div>
     {% endfor %}
 </div>
