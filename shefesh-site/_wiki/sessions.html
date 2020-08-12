@@ -1,26 +1,19 @@
 ---
 layout: default
-title: Wiki
-custom_css: wiki
+title: Wiki - Sessions
+custom_css: wikisessions
 ---
-
-<div class="subpage_banner">
-    <div class="separator"><h2>Wiki</h2></div>
-</div>
 
 <h3 class="title-center">Past session presentations and useful links!</h3>
 
 <div id="sessions">
-    <!-- {% assign sorted = site.wiki | sort: 'date | date:"%y"' %} -->
-    {% assign lastDate = 0 %}
 
-    {% for item in site.wiki %}
+    {% for item in site.sessions %}
         {% assign currentDate = item.date | date: '%y' %}
         {% if lastDate != currentDate %}
-            <div class="heading"><h3>Year 20{{ currentDate }}</h3></div>
+            <div class="heading"><h3>Year 20{{ currentDate }}/{{ currentDate | plus: 1 }}</h3></div>
         {% endif %}
         {% assign lastDate = currentDate %}
-        <!-- {{ lastDate }} -->
         <div class="session">
             {% capture path %}
                 /assets/wiki/{{ item.file-name }}

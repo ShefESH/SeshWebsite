@@ -1,0 +1,45 @@
+img {
+    margin: 10px 25px;
+    height: 72px;
+}
+
+.social-media{
+    text-align: center;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+}
+
+.mail-inclusions {
+    padding: 2.5rem 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+    border-left-color: $lightBlue;
+}
+
+.mail-general {
+    padding: 2.5rem 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+    border-left-color: $pinkColor;
+}
+
+.mail-content {
+    display: inline-block;
+    padding-left: 5%;
+}
+
+.heading {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: $pinkColor;
+}

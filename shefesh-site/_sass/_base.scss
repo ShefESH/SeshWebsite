@@ -1,0 +1,25 @@
+$backgroundColor: #1c1e29;
+$backgroundColorLight: #33354b;
+$bodyColor: #fff;
+$pinkColor: #eb3c68;
+$lightBlue: #00e7e7;
+$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+.content-wrapper {
+    width: 80%;
+    padding: 10%;
+    padding-top: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h3.title-center {
+    text-align: center;
+}
