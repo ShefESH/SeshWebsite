@@ -17,5 +17,7 @@ collections:
     output: true
   sponsors:
     output: true
-  wiki:
+  sessions:
     output: true
+  wiki:
+      output: true
