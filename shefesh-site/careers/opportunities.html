@@ -1,0 +1,69 @@
+---
+layout: default
+title: Opportunities
+custom_css: opportunities
+---
+<div class="subpage_banner">
+    <div class="separator"><h2>Opportunities</h2></div>
+</div>
+
+<p>This page contains a list of all currently available opportunities from companies that have partnered with SESH. We will update it as opportunities are released, so remember to check back regularly!</p>
+
+<p>We may also provide more detail on opportunities in our sessions, or tell you about opportunities that may not be able to be listed here - so remember to come along whenever you can!</p>
+
+<div class="separator"><h2>Public Sector</h2></div>
+
+{% if site.pub-sector == empty %}
+There are currently no public sector opportunities - check back later!
+{% else %}
+<div class="features">
+    {% for item in site.pub-sector %}
+        <div class="feature">
+            <div class="text">
+                <h4><a href="{{ item.link }}"> {{ item.host }} </a></h4>
+                <p>Type: {{ item.type }}</p>
+                <p>Location: {{ item.location }}</p>
+                <p>Deadline: {{ item.deadline }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+<div class="separator"><h2>Private Sector</h2></div>
+
+{% if site.priv-sector == empty %}
+There are currently no private sector opportunities - check back later!
+{% else %}
+<div class="features">
+    {% for item in site.priv-sector %}
+        <div class="feature">
+            <div class="text">
+                <h4><a href="{{ item.link }}">{{ item.host }}</a></h4>
+                <p>Type: {{ item.type }}</p>
+                <p>Location: {{ item.location }}</p>
+                <p>Deadline: {{ item.deadline }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+<div class="separator"><h2>Other</h2></div>
+
+{% if site.other-opps == empty %}
+There are currently no other opportunities - check back later!
+{% else %}
+<div class="features">
+    {% for item in site.other-opps %}
+        <div class="feature">
+            <div class="text">
+                <h4><a href="{{ item.link }}"> {{ item.host }} </a></h4>
+                <p>Type: {{ item.type }}</p>
+                <p>Location: {{ item.location }}</p>
+                <p>Deadline: {{ item.deadline }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endif %}

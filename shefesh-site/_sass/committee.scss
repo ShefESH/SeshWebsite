@@ -1,19 +1,16 @@
-$backgroundColorLight: #33354b;
-$lightBlue: #00e7e7;
-
 #profiles {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .committee-profile {
     width: 25%;
-    min-width: 370px;
+    min-width: 350px;
     background-color: $backgroundColorLight;
     display: flex;
-    margin: 2% 3%;
-    padding: 0.1em;
+    margin: 2% 10px;
     border-radius: 4px;
 }
 
@@ -29,12 +26,9 @@ $lightBlue: #00e7e7;
     max-height: 250px;
     border-radius: 2px;
     margin:0.7em 0.3em;
+    object-fit: cover;
 }
 
 .committee-profile h3 {
     font-weight: bold;
-}
-
-main h3.title-center {
-    text-align: center;
 }

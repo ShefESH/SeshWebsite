@@ -1,10 +1,3 @@
-$backgroundColor: #1c1e29;
-$backgroundColorLight: #33354b;
-$bodyColor: #fff;
-$pinkColor: #eb3c68;
-$lightBlue: #00e7e7;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-
 body {
   background: $backgroundColor;
   color: $bodyColor;
@@ -69,18 +62,26 @@ body {
   text-decoration: none;
   color: $lightBlue;
   display: inline-block;
-  padding: 0.3%;
-  margin: 0.25em 0 0.25em 1.1%;
+  padding: 15px;
+  margin: 0 0 0 1.1%;
 }
 
 .nav ul a:visited {
   color: $lightBlue;
 }
 
+nav button:hover, a:hover {
+    background-color: $backgroundColor;
+}
+
+nav .dropdown a {
+    margin: 0;
+}
+
 nav .dropbtn {
   background-color: $backgroundColorLight;
   color: $lightBlue;
-  padding: 16px;
+  padding: 15px;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -114,22 +115,17 @@ nav .dropdown:hover .dropdown-content {
   display: block;
 }
 
-main {
-  padding: 0.3%;
-  margin: 0 1.1%;
-}
-
-main a {
+a {
   outline : none;
   text-decoration: none;
   color: $lightBlue
 }
 
-main a:visited {
+a:visited {
   color: $lightBlue
 }
 
-main h2 {
+h2 {
   color: $pinkColor;
   text-align: center;
 }
@@ -139,10 +135,16 @@ credit for below code snippet:
 https://stackoverflow.com/questions/2812770/add-centered-text-to-the-middle-of-a-hr-like-line
 */
 
+.separator h2 {
+  color: $pinkColor;
+  text-align: center;
+}
+
 .separator {
   display: flex;
   align-items: center;
   text-align: center;
+  padding: 1%;
 }
 .separator::before, .separator::after {
   content: '';
@@ -154,6 +156,12 @@ https://stackoverflow.com/questions/2812770/add-centered-text-to-the-middle-of-a
 }
 .separator::after {
   margin-left: .25em;
+}
+
+.sub-title h2{
+  color: $pinkColor;
+  text-align: left;
+  font-size: x-large;
 }
 
 /*
