@@ -1,6 +1,8 @@
 # shefesh-site
 Static site for the Sheffield Ethical Student Hackers Society
 
+Live site at https://www/shefesh.com
+
 Built with [Jekyll](https://jekyllrb.com/)
 
 ## Setup
