@@ -8,7 +8,7 @@ custom_css: wikisessions
 
 <div id="sessions">
 
-    {% for item in site.sessions %}
+    {% for item in site.resources %}
         {% assign currentDate = item.date | date: '%y' %}
         {% if lastDate != currentDate %}
             <div class="heading"><h3>Year 20{{ currentDate }}/{{ currentDate | plus: 1 }}</h3></div>

@@ -13,6 +13,8 @@ collections:
     output: true
   ind-partners:
     output: true
+  resources:
+    output: true
   soc-partners:
     output: true
   sponsors:
@@ -20,4 +22,4 @@ collections:
   sessions:
     output: true
   wiki:
-      output: true
+    output: true
