@@ -1,0 +1,27 @@
+---
+layout: default
+title: Wiki - Sessions
+custom_css: wikisessions
+---
+
+<h3 class="title-center">Past session presentations and useful links!</h3>
+
+<div id="sessions">
+
+    {% for item in site.resources %}
+        {% assign currentDate = item.date | date: '%y' %}
+        {% if lastDate != currentDate %}
+            <div class="heading"><h3>Year 20{{ currentDate }}/{{ currentDate | plus: 1 }}</h3></div>
+        {% endif %}
+        {% assign lastDate = currentDate %}
+        <div class="session">
+            {% capture path %}
+                /assets/wiki/{{ item.file-name }}
+            {% endcapture %}
+            <div class="text">
+                <a href="{{ path }}">{{ item.title }} - [{{ item.type }}]</a>
+                <p>Released on {{ item.date | date_to_string }} by {{ item.by }}
+            </div>
+        </div>
+    {% endfor %}
+</div>

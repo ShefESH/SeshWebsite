@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "wikisessions.css",
+	"sources": [
+		"wikisessions.scss",
+		"_sass/_base.scss",
+		"_sass/wikisessions.scss"
+	],
+	"sourcesContent": [
+		"@import \"base\";\n@import \"wikisessions\";\n",
+		"$backgroundColor: #1c1e29;\r\n$backgroundColorLight: #33354b;\r\n$bodyColor: #fff;\r\n$pinkColor: #eb3c68;\r\n$lightBlue: #00e7e7;\r\n$bodyFont: -apple-system,BlinkMacSystemFont,\"Segoe UI\",Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\";\r\n\r\n.content-wrapper {\r\n    width: 80%;\r\n    padding: 10%;\r\n    padding-top: 0;\r\n    margin: 0;\r\n}\r\n\r\nh2 {\r\n    font-size: 2rem;\r\n}\r\n\r\nh3 {\r\n    font-size: 1.5rem;\r\n}\r\n\r\nh3.title-center {\r\n    text-align: center;\r\n}",
+		"$backgroundColorLight: #33354b;\r\n$lightBlue: #00e7e7;\r\n\r\n\r\nmain h3.title-center {\r\n    text-align: center;\r\n}\r\n\r\n.session {\r\n    background-color: $backgroundColorLight;\r\n    margin: 1% 0%;\r\n    padding: 0.6em;\r\n    width: 50%;\r\n    min-width: 370px;\r\n    border-radius: 4px;\r\n}\r\n\r\n.session p {\r\n    margin: 0;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "ACOA,AAAA,gBAAgB,CAAC,EACb,KAAK,EAAE,GAAG,EACV,OAAO,EAAE,GAAG,EACZ,WAAW,EAAE,CAAC,EACd,MAAM,EAAE,CAAC,GACZ;;AAED,AAAA,EAAE,CAAC,EACC,SAAS,EAAE,IAAI,GAClB;;AAED,AAAA,EAAE,CAAC,EACC,SAAS,EAAE,MAAM,GACpB;;AAED,AAAA,EAAE,AAAA,aAAa,CAAC,EACZ,UAAU,EAAE,MAAM,GACrB;;ACpBD,AAAA,IAAI,CAAC,EAAE,AAAA,aAAa,CAAC,EACjB,UAAU,EAAE,MAAM,GACrB;;AAED,AAAA,QAAQ,CAAC,EACL,gBAAgB,EATG,OAAO,EAU1B,MAAM,EAAE,KAAK,EACb,OAAO,EAAE,KAAK,EACd,KAAK,EAAE,GAAG,EACV,SAAS,EAAE,KAAK,EAChB,aAAa,EAAE,GAAG,GACrB;;AAED,AAAA,QAAQ,CAAC,CAAC,CAAC,EACP,MAAM,EAAE,CAAC,GACZ"
+}

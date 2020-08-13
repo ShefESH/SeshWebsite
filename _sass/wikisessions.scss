@@ -1,0 +1,20 @@
+$backgroundColorLight: #33354b;
+$lightBlue: #00e7e7;
+
+
+main h3.title-center {
+    text-align: center;
+}
+
+.session {
+    background-color: $backgroundColorLight;
+    margin: 1% 0%;
+    padding: 0.6em;
+    width: 50%;
+    min-width: 370px;
+    border-radius: 4px;
+}
+
+.session p {
+    margin: 0;
+}

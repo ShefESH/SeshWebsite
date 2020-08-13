@@ -1,0 +1,73 @@
+.content-wrapper { width: 80%; padding: 10%; padding-top: 0; margin: 0; }
+
+h2 { font-size: 2rem; }
+
+h3 { font-size: 1.5rem; }
+
+h3.title-center { text-align: center; }
+
+body { background: #1c1e29; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; height: 100%; width: 100%; margin: 0; }
+
+#indexBody { padding: 1em; }
+
+.wrapper { height: 100%; width: 100%; background-color: #1c1e29; }
+
+.banner { width: 100%; background-color: #33354b; padding: 0; margin: 0; border: 0; }
+
+.banner h1 { color: black; border-style: hidden; border-width: 2px 0; padding: 0.4% 0.3%; margin: 0 0 0 1.1%; }
+
+.banner h1 a { outline: none; text-decoration: none; color: #eb3c68; }
+
+.banner h1 a:visited { color: #eb3c68; }
+
+.nav { width: 100%; background-color: #33354b; padding: 0; margin: 0; border: 0; }
+
+.nav ul { padding: 0; margin: 0; border: 0; }
+
+.nav ul a { outline: none; text-decoration: none; color: #00e7e7; display: inline-block; padding: 15px; margin: 0 0 0 1.1%; }
+
+.nav ul a:visited { color: #00e7e7; }
+
+nav button:hover, nav a:hover { background-color: #1c1e29; }
+
+nav .dropdown a { margin: 0; }
+
+nav .dropbtn { background-color: #33354b; color: #00e7e7; padding: 15px; font-size: 16px; border: none; cursor: pointer; }
+
+nav .dropdown { position: relative; display: inline-block; }
+
+nav .dropdown-content { display: none; position: absolute; background-color: #33354b; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1; }
+
+nav .dropdown-content a { padding: 10px 0px 10px 7px; text-decoration: none; display: block; }
+
+nav .dropdown-content a:hover { background-color: #1c1e29; }
+
+nav .dropdown:hover .dropdown-content { display: block; }
+
+a { outline: none; text-decoration: none; color: #00e7e7; }
+
+a:visited { color: #00e7e7; }
+
+h2 { color: #eb3c68; text-align: center; }
+
+/*
+credit for below code snippet:
+https://stackoverflow.com/questions/2812770/add-centered-text-to-the-middle-of-a-hr-like-line
+*/
+.separator h2 { color: #eb3c68; text-align: center; }
+
+.separator { display: flex; align-items: center; text-align: center; padding: 1%; }
+
+.separator::before, .separator::after { content: ''; flex: 1; border-bottom: 1px solid #eb3c68; }
+
+.separator::before { margin-right: .25em; }
+
+.separator::after { margin-left: .25em; }
+
+.sub-title h2 { color: #eb3c68; text-align: left; font-size: x-large; }
+
+/*
+end of code snippet
+*/
+
+/*# sourceMappingURL=main.css.map */
