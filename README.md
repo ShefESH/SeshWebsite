@@ -11,7 +11,7 @@ To host this website locally, follow these steps
 
 **Clone this repository:**
 
-`git clone git@github.com:Twigonometry/shefesh-site.git`
+`git clone git@github.com:ShefESH/SeshWebsite.git`
 
 **Install Ruby:**
 
@@ -27,11 +27,9 @@ Skip this step if you have it already. Tested with Jekyll Version 4.1.1
 
 **Navigate to website folder:**
 
-`cd shefesh-site/shefesh-site`
+`cd SeshWebsite`
 
 **Launch Server:**
-
-Make sure you are in the child directory (*shefesh-site/shefesh-site*) when you do this, not the parent directory! (Otherwise a _site folder will be generated in the top level of the repository and the site will not compile correctly)
 
 `bundle exec jekyll serve`
 
@@ -45,7 +43,7 @@ If bundler is set up correctly, you should be able to omit 'bundle exec' from th
 
 To run the above with one command, add the following alias to your *.bashrc* (or equivalent)
 
-`alias serve='cd /path/to/shefesh-site/shefesh-site; jekyll build; jekyll serve'`
+`alias serve='cd /path/to/SeshWebsite; jekyll build; jekyll serve'`
 
 **Navigate to site in browser**
 
@@ -54,8 +52,6 @@ Site is hosted at the following address by default - Jekyll will tell you if thi
 `http://localhost:4000`
 
 ## Using Jekyll
-
-All code for the site is stored in the child *shefesh-site* directory
 
 *_site* and *jekyll-cache* directories are excluded by gitignore - these will be generated locally when running `jekyll serve`
 
