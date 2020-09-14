@@ -17,3 +17,9 @@ $lightBlue: #00e7e7;
 .session p {
     margin-bottom: 0;
 }
+
+@media only screen and (max-width: 450px) {
+    .session {
+        min-width: 100%;
+    }
+}

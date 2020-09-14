@@ -18,3 +18,9 @@ main h3.title-center {
 .session p {
     margin: 0;
 }
+
+@media only screen and (max-width: 450px) {
+    .session {
+        min-width: 100%;
+    }
+}
