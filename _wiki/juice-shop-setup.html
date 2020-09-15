@@ -1,0 +1,40 @@
+---
+layout: default
+title: Juice Shop Setup
+---
+
+<div class="content-wrapper">
+    <p>Setting up <a href="https://owasp.org/www-project-juice-shop/">Juice Shop</a> is simple, but might be daunting if you're new to Cybersecurity - follow our guide below to get started!</p>
+
+    <h3>TryHackMe</h3>
+
+    <p>We will be using TryHackMe during the session - it is a great platform for learning ethical hacking, and their Juice Shop room provides some great 'nudges' for exploring the basics of the system</p>
+
+    <p>Don't worry, you don't have to pay (although TryHackMe's premium rooms are great!) Just create an account and visit <a href="https://tryhackme.com/room/juiceshop">this link</a> (you'll need to login first, otherwise you may be told the room is private)</p>
+
+    <p>From here, you need to deploy the machine using the 'Deploy' button - this will create an 'instance' of Juice Shop, hosted on TryHackMe, that you can connect to via the IP address shown on the screen (yours will be different!)</p>
+
+    <img src="/assets/images/wiki/juice-shop/thm-active-machine.PNG" style="max-width: 80%;">
+
+    <p>Before you hop onto the machine and start hacking, you'll need to connect to the TryHackMe network! You can use a tool such as OpenVPN to do this, and a guide is available <a href="https://tryhackme.com/access">here</a></p>
+
+    <p>In short, all you need to do is download your connection pack (from the same link) and run <q>openvpn YourUsername.ovpn</q> - once it has initialised, you should be able to visit the IP address of your instance in a normal web browser, and start hacking!</p>
+
+    <img src="/assets/images/wiki/juice-shop/juice-shop-homepage.PNG" style="max-width: 80%;">
+        
+    <p>We recommend Kali Linux for the above, and for exploring the site itself - it comes with OpenVPN and all the other tools you might need (like Burp Suite) preinstalled. Read our guide to setting it up <a href="/wiki/virtual-machine">here!</a> You can, however, do Juice Shop on whatever operating system you like - as long as you can connect to the TryHackMe network, you'll be fine :)</p>
+
+    <p>Don't worry if you're not familiar with the Linux commands we used above, or can't get it working - the alternative methods below might be easier!</p>
+
+    <h3>Other Methods</h3>
+
+    <p>Alternatively, you can use one of the methods below to create a more stable version of Juice Shop that doesn't run through TryHackMe</p>
+
+    <p>The documentation recommends either running the application locally, or to deploy to Heroku (you'll need an account). Both methods are described <a href="https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part1/running.html">here</a> in the excellent documentation</p>
+
+    <p>We recommend using the 'Deploy to Heroku' method from the guide above - it's even simpler than deploying via TryHackMe, and will create an app that you can navigate to directly in your browser!</p>
+
+    <p>An official Heroku instance is also available at <a href="https://juice-shop.herokuapp.com">https://juice-shop.herokuapp.com</a> - however, as <a href="https://elements.heroku.com/buttons/jsalado/juice-shop">this guide</a> explains, you are better off deploying your own in case you make any mistakes!</p>
+
+    
+</div>
