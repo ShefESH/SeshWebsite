@@ -18,9 +18,9 @@ body {
 }
 
 .banner {
-  width: 100%;
+  width: 80%;
   background-color: $backgroundColorLight;
-  padding: 0;
+  padding: 0 10% 0 10%;
   margin: 0;
   border: 0;
 }
@@ -30,7 +30,7 @@ body {
   border-style: hidden;
   border-width: 2px 0;
   padding: 0.4% 0.3%;
-  margin: 0 0 0 1.1%;
+  margin: 0;
 }
 
 .banner h1 a {
@@ -44,9 +44,9 @@ body {
 }
 
 .nav {
-  width: 100%;
+  width: 80%;
   background-color: $backgroundColorLight;
-  padding: 0;
+  padding: 0 10% 0 10%;
   margin: 0;
   border: 0;
 }
@@ -63,7 +63,6 @@ body {
   color: $lightBlue;
   display: inline-block;
   padding: 15px;
-  margin: 0 0 0 1.1%;
 }
 
 .nav ul a:visited {
