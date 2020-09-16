@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-GB" }}">
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
     {% include header.html %}
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="wrapper">
-      {% include banner.html %}
-      {% include nav.html %}
-      <div class="subpage_banner">
-        <div class="separator">
-          <h2>{{ page.title }}</h2>
+        {% include banner.html %}
+        {% include nav.html %}
+        <div class="subpage_banner">
+            <div class="separator">
+                <h2>{{ page.title }}</h2>
+            </div>
         </div>
-      </div>
-      <div class="content-wrapper">
-          {{ content }}
-      </div>
+        <div class="content-wrapper">
+            {{ content }}
+        </div>
+        {% include footer.html %}
     </div>
-    {% include footer.html %}
-  </body>
+</body>
+
 </html>
