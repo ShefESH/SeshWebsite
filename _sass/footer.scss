@@ -1,0 +1,225 @@
+// footer{
+// 	background-color: $backgroundColorLight;
+// 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+// 	box-sizing: border-box;
+// 	width: 100%;
+// 	text-align: left;
+// 	font: normal 16px sans-serif;
+//
+// 	padding: 45px 50px;
+// 	margin-top: 80px;
+// }
+//
+// footer .footer-left p{
+// 	color:  #8f9296;
+// 	font-size: 14px;
+// 	margin: 0;
+// }
+//
+// /* Footer links */
+//
+// footer p.footer-desc{
+// 	font-size:18px;
+// 	font-weight: bold;
+// 	color:  #ffffff;
+// 	margin: 0 0 10px;
+// 	padding: 0;
+// }
+//
+// footer p.footer-desc a{
+// 	color:  $lightBlue;
+// }
+//
+// footer .footer-right{
+// 	float: right;
+// 	margin-top: 6px;
+// 	max-width: 180px;
+// }
+//
+// footer .footer-right img{
+// 	display: inline-block;
+//     opacity: .6;
+// 	width: 35px;
+// 	height: 35px;
+// 	background-color:  #33383b;
+// 	border-radius: 2px;
+//
+// 	font-size: 20px;
+// 	color: #ffffff;
+// 	text-align: center;
+// 	line-height: 35px;
+//
+// 	margin-left: 3px;
+// }
+//
+// footer p.footer-desc img {
+//     height: 32px;
+//     width: 32px;
+// }
+//
+// footer .footer-right img:hover { opacity: 1; }
+//
+// /* If you don't want the footer to be responsive, remove these media queries */
+//
+// @media (max-width: 600px) {
+//
+// 	footer .footer-left,
+// 	footer .footer-right{
+// 		text-align: center;
+// 	}
+//
+// 	footer .footer-right{
+// 		float: none;
+// 		margin: 0 auto 20px;
+// 	}
+//
+// 	footer .footer-left p.footer-desc{
+// 		line-height: 1.8;
+// 	}
+// }
+
+footer {
+    background-color: $backgroundColorLight;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 40px 35px;
+}
+
+footer .footer-center,
+footer .footer-left,
+footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+/* Footer left */
+footer .footer-left {
+    width: 40%;
+}
+
+footer img {
+    height: 100px;
+    width: 100px;
+}
+/* Footer links */
+footer .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+footer .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+/* Footer Center */
+footer .footer-center {
+    width: 35%;
+}
+
+footer .footer-center img {
+    background-color: $backgroundColorLight;
+    color: #ffffff;
+    font-size: 25px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+    opacity: 0.6;
+}
+
+footer .footer-center img {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+footer .footer-center p a {
+    color: #5383d3;
+    text-decoration: none;
+}
+/* Footer Right */
+footer .footer-right {
+    width: 20%;
+}
+
+footer .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+footer .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer .footer-icons {
+    margin-top: 15px;
+}
+
+footer .footer-icons a img {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: $backgroundColorLight;
+    border-radius: 2px;
+    font-size: 20px;
+    opacity: 0.6;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 880px) {
+    footer {
+        font: bold 14px sans-serif;
+    }
+
+    footer .footer-center,
+    footer .footer-left,
+    footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    footer .footer-center i {
+        margin-left: 0;
+    }
+}
