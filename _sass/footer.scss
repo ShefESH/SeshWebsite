@@ -124,6 +124,10 @@ footer .footer-icons a img {
     margin-right: 3px;
     margin-bottom: 5px;
 }
+footer .footer-icons a img:hover {
+    opacity: 1;
+}
+
 /* If you don't want the footer to be responsive, remove these media queries */
 @media (max-width: 880px) {
     footer {
