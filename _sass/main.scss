@@ -73,6 +73,10 @@ body {
   padding: 0 1em 0 1em ;
 }
 
+.nav ul li button {
+    cursor: default;
+}
+
 .nav ul a:visited {
   color: $lightBlue;
 }
