@@ -6,6 +6,8 @@ custom_css: wikiresources
 
 <h3 class="title-center">Resources and useful links!</h3>
 
+<p>We know how hard it can be to figure out where to start in Cybersecurity - that's why we've curated this list! You can find learning resources, tools, walkthroughs, and more below</p>
+
 <div id="resources">
     <div class="resource">
         <h3>Penetration Testing Labs</h3>
@@ -35,18 +37,47 @@ custom_css: wikiresources
         <h3>Walkthroughs and Writeups</h3>
         <p><a href="https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA">Ippsec</a> - A YouTube channel dedicated to walkthroughs of HackTheBox and other challenges</p>
         <p><a href="https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/appendix/solutions.html">Juice Shop Solutions</a> - A comprehensive list of solutions for the Juice Shop Challenges</p>
+        <p><a href="https://blog.barradell-johns.com/index.php/category/writeups/">Jack Barradell-Johns</a> - Excellent writeups from our former Vice President!</p>
     </div>
     <div class="resource">
         <h3>Tools</h3>
-        <p><a href="https://nmap.org/">Nmap</a> - A tool for enumerating networks, with lots of built in scripts for enriching information - this is the first step in most security assessments!</p>
-        <p><a href="https://www.wireshark.org/">Wireshark</a> - An incredibly powerful tool for analysing network traffic</p>
-        <p><a href="https://portswigger.net/burp">Burp Suite</a> - A powerful tool for capturing and analysing HTTP requests, and modifying them on the fly</p>
-        <p><a href="http://sqlmap.org/">sqlmap</a> - A tool for automatically detecting and performing SQL injection attacks</p>
-        <p><a href="https://www.metasploit.com/">Metasploit</a> - An extensive set of exploit implementations, downloadable for free via Metasploit Framework</p>
-        <p><a href="https://ghidra-sre.org/">Ghidra</a> - A suite of software reverse engineering tools, developed by the NSA</p>
-        <p><a href="https://github.com/trustedsec/social-engineer-toolkit">Social Engineering Toolkit</a> - A suite of social engineering and OSINT tools, including phishing and fake login pages!</p>
-        <p><a href="https://gchq.github.io/CyberChef/">Cyberchef</a> - A GCHQ released tool that's useful for encodings, cryptography and a ton of other useful tools!</p>
-        <p><a href="https://jwt.io/">jwt</a> - A tool useful for decoding JWT tokens used in web applications</p>
+        <p>Remember the <a href="{{ site.url }}/downloads/SESH Code of Conduct.pdf">Code of Conduct</a> (and the Computer Misuse Act) when using these tools! They are for education only, to be used on systems where you have explicit permission</p>
+        <p>Once you're sure you're working ethically and within the law... have fun!</p>
+        <h4>Enumeration + Privelege Escalation</h4>
+        <ul>
+            <li><p><a href="https://nmap.org/">Nmap</a> - A tool for enumerating networks, with lots of built in scripts for enriching information - this is the first step in most security assessments!</p></li>
+            <li><p><a href="https://github.com/OJ/gobuster">Gobuster</a> - Insanely fast tool for discovering webpages on a domain - often the first step when exploring a web app</p></li>
+            <li><p><a href="https://sourceforge.net/projects/ldapenum/">ldapenum</a> - Tool for enumerating system and domain controllers over LDAP - useful for Windows boxes!</p></li>
+            <li><p><a href="https://github.com/DominicBreuker/pspy">pspy</a> - For monitoring processes on a Linux machine - useful for discovering interesting things post-exploitation!</p></li>
+            <li><p><a href="https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite">PrivEsc Scripts Suite</a> - A list of brilliant scripts for enumerating ahead of privelege escalation, including linPEAS and winPEAS</p></li>
+            <li><p><a href="https://github.com/BloodHoundAD/BloodHound">Bloodhound</a> - Brilliant tool for visualising exploitation paths in Active Directory, and suggesting exploits</p></li>
+        </ul>
+        <h4>Networking</h4>
+        <ul>
+            <li><p><a href="https://portswigger.net/burp">Burp Suite</a> - A powerful tool for capturing and analysing HTTP requests, and modifying them on the fly - this is an essential in your toolkit!</p></li>
+            <li><p><a href="https://www.wireshark.org/">Wireshark</a> - An incredibly powerful tool for analysing network traffic</p></li>
+        </ul>
+        <h4>Exploitation</h4>
+        <ul>
+            <li><p><a href="http://sqlmap.org/">sqlmap</a> - A tool for automatically detecting and performing SQL injection attacks</p></li>
+            <li><p><a href="https://www.metasploit.com/">Metasploit</a> - An extensive set of exploit implementations, downloadable for free via Metasploit Framework</p></li>
+            <li><p><a href="https://github.com/byt3bl33d3r/CrackMapExec">CrackMapExec</a> - A mindblowingly versatile tool used for enumerating and exploiting Windows Machines and Active Directory - with incredible <a href="https://mpgn.gitbook.io/crackmapexec/">documentation!</a></p></li>
+            <li><p><a href="https://github.com/mgeeky/tomcatWarDeployer">tomcatWarDeployer</a> - For deploying malicious payloads to compromised Tomcat webservers</p></li>
+        </ul>
+        <h4>Social Engineering + OSINT</h4>
+        <ul>
+            <li><p><a href="https://github.com/trustedsec/social-engineer-toolkit">Social Engineering Toolkit</a> - A suite of social engineering and OSINT tools, including phishing and fake login pages!</p></li>
+        </ul>
+        <h4>Reverse Engineering</h4>
+        <ul>
+            <li><p><a href="https://ghidra-sre.org/">Ghidra</a> - A suite of software reverse engineering tools, developed by the NSA</p></li>
+        </ul>
+        <h4>Utility</h4>
+        <ul>
+            <li><p><a href="https://gchq.github.io/CyberChef/">Cyberchef</a> - A GCHQ released tool that's useful for encodings, cryptography and a ton of other useful tools!</p></li>
+            <li><p><a href="https://jwt.io/">jwt</a> - A tool useful for decoding JWT tokens used in web applications</p></li>
+            <li><p><a href="https://www.openwall.com/john/">John the Ripper</a> - A great password cracking tool, supporting hundreds of hash and cipher types</p></li>
+        </ul>
     </div>
     <div class="resource">
         <h3>Academic Research</h3>
