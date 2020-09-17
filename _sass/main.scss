@@ -26,16 +26,16 @@ body {
 }
 
 .banner h1 {
-  color: black;
   border-style: hidden;
   border-width: 2px 0;
-  padding: 0.4% 0.3%;
+  padding: 2% 0.9% 2% 0.3%;
   margin: 0;
 }
 
 .banner h1 a {
   outline : none;
   text-decoration: none;
+  padding-left: 2%;
   color: $pinkColor;
 }
 
@@ -49,20 +49,28 @@ body {
   padding: 0 10% 0 10%;
   margin: 0;
   border: 0;
+  padding-bottom: 0.2em;
 }
 
 .nav ul {
   padding: 0;
   margin: 0;
   border: 0;
+  list-style-type: none;
+  display: inline;
 }
 
 .nav ul a {
+  font-size: 1.2rem;
   outline : none;
   text-decoration: none;
   color: $lightBlue;
   display: inline-block;
-  padding: 15px;
+  padding: 0.7em;
+}
+
+.nav ul li {
+  padding: 0 1em 0 1em ;
 }
 
 .nav ul a:visited {
@@ -80,8 +88,8 @@ nav .dropdown a {
 nav .dropbtn {
   background-color: $backgroundColorLight;
   color: $lightBlue;
-  padding: 15px;
-  font-size: 16px;
+  padding: 0.7em;
+  font-size: 1.2rem;
   border: none;
   cursor: pointer;
 }
@@ -169,6 +177,7 @@ end of code snippet
 
 .menu-link {
   display: inline-block;
+
 }
 
 #video {
