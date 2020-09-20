@@ -2,7 +2,7 @@ body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   margin: 0
 }
@@ -12,6 +12,8 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   background-color: $backgroundColor
