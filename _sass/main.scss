@@ -74,7 +74,7 @@ body {
 }
 
 .nav ul li button {
-    cursor: default;
+  cursor: default;
 }
 
 .nav ul a:visited {
@@ -82,11 +82,12 @@ body {
 }
 
 nav button:hover, nav a:hover {
-    background-color: $backgroundColor;
+  border-radius: 5px;
+  background-color: $backgroundColor;
 }
 
 nav .dropdown a {
-    margin: 0;
+  margin: 0;
 }
 
 nav .dropbtn {
