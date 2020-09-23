@@ -14,8 +14,8 @@ custom_css: sessions
     {% endif %}
     {% assign lastSection = currentSection[1] %}
     <div class="session">
-        <h4>{{ item.date | date_to_string }} – {{ item.title }}</h3>
-        <h5>Presented by {{ item.presenter }}</h4>
+        <h4>{{ item.date | date_to_string }} – {{ item.title }}</h4>
+        <h5>Presented by {{ item.presenter }}</h5>
         <p>{{ item.content }}</p>
     </div>
     {% endfor %}
