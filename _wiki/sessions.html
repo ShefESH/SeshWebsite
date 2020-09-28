@@ -6,9 +6,11 @@ custom_css: wikisessions
 
 <h3 class="title-center">Past session presentations can be found here!</h3>
 
+<p>Recordings for this year's sessions are also available on our Blackboard Collaborate Organisations page. Click 'Sessions' in the sidebar and click the hamburger icon to reveal the 'Recordings' submenu. Session recordings only available to members!</p>
+
 <div id="sessions">
 
-    {% for item in site.resources %}
+    {% for item in site.session-slides %}
         {% assign currentDate = item.date | date: '%y' %}
         {% assign month = item.date | date: '%-m' | plus: 0 %}
         {% if month < 8 %}

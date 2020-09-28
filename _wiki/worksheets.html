@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Wiki - Resources
-custom_css: wikiresources
+custom_css: wikisessions
 ---
 
 <h3 class="title-center">Worksheets</h3>
@@ -9,3 +9,27 @@ custom_css: wikiresources
 <p>We will be publishing all our worksheets here after sessions - check back regularly!</p>
 
 <p>Solutions will be released the week after</p>
+
+<div id="worksheets">
+
+    {% for item in site.worksheets %}
+        {% assign currentDate = item.date | date: '%y' %}
+        {% assign month = item.date | date: '%-m' | plus: 0 %}
+        {% if month < 8 %}
+            {% assign currentDate = currentDate | minus: 1 %}
+        {% endif %}
+        {% if lastDate != currentDate %}
+            <div class="heading"><h3>Year 20{{ currentDate }}/{{ currentDate | plus: 1 }}</h3></div>
+        {% endif %}
+        {% assign lastDate = currentDate %}
+        <div class="worksheet">
+            {% capture path %}
+                /assets/wiki/{{ item.file-name }}
+            {% endcapture %}
+            <div class="text">
+                <a href="{{ path }}">{{ item.title }} - [{{ item.type }}]</a>
+                <p>Released in {{ item.date | date: '%B, %Y' }} by {{ item.by }}
+            </div>
+        </div>
+    {% endfor %}
+</div>

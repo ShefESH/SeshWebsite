@@ -15,6 +15,10 @@ collections:
     output: true
   resources:
     output: true
+  session-slides:
+    output: true
+  worksheets:
+    output: true
   soc-partners:
     output: true
   sponsors:
