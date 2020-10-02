@@ -27,3 +27,19 @@ function setStyle(element) {
     element.style.backgroundColor = "#1c1e29";
     element.style.borderRadius = "5px";
 }
+
+const nav = document.querySelector('nav.nav')
+const head = document.querySelector('header')
+const navTop = nav.offsetTop
+
+function stickyNav() {
+    if (window.scrollY >= navTop) {
+        nav.classList.add('sticky')
+        head.style.paddingBottom = `${nav.offsetHeight}px`
+    } else {
+        nav.classList.remove('sticky')
+        head.style.paddingBottom = 0
+    }
+}
+
+window.addEventListener('scroll', stickyNav)
