@@ -83,6 +83,10 @@ body {
   color: $lightBlue;
 }
 
+nav.sticky {
+  position: fixed;
+}
+
 nav button:hover, nav a:hover {
   border-radius: 5px;
   background-color: $backgroundColor;
