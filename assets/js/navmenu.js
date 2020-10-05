@@ -9,6 +9,10 @@ function setNavmenuColor(document) {
         let element = document.querySelector("#committee");
         setStyle(element);
     }
+    else if (url.indexOf("") > -1) {
+        let element = document.querySelector("#home");
+        setStyle(element);
+    }
     else if (url.indexOf("contact") > -1) {
         let element = document.querySelector("#contact");
         setStyle(element);
