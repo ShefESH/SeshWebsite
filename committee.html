@@ -17,7 +17,7 @@ custom_css: committee
             {% capture path %}
                 /assets/images/committee/{{ item.image-name }}
             {% endcapture %}
-            <img src="{{ path }}">
+            <img src="{{ path }}" alt="Picture of {{ item.name }}">
         </div>
     {% endfor %}
 </div>
