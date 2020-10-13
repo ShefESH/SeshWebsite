@@ -1,29 +1,39 @@
 function setNavmenuColor(document) {
     var url = window.location.href;
-
-    if (url.indexOf("sessions") > -1) {
-        let element = document.querySelector("#sessions");
-        setStyle(element);
-    }
-    else if (url.indexOf("committee") > -1) {
-        let element = document.querySelector("#committee");
-        setStyle(element);
-    }
-    else if (url.indexOf("contact") > -1) {
-        let element = document.querySelector("#contact");
-        setStyle(element);
-    }
-    else if (url.indexOf("careers") > -1) {
-        let element = document.querySelector("#careers");
-        setStyle(element);
-    }
-    else if (url.indexOf("wiki") > -1) {
-        let element = document.querySelector("#wiki");
-        setStyle(element);
-    }
-    else if (url.indexOf("") > -1) {
-        let element = document.querySelector("#home");
-        setStyle(element);
+    console.log(url)
+    // Highlighting for the wiki and sub-directories
+    if (url.indexOf("wiki") > -1) {
+        if (url.indexOf("worksheets") > -1) {
+            setStyle(document.querySelector("#worksheets"))
+        } else if (url.indexOf("sessions") > -1) {
+            setStyle(document.querySelector("#past-sessions "))
+        } else if (url.indexOf("resources") > -1) {
+            setStyle(document.querySelector("#resources"))
+        } else if (url.indexOf("virtual-machine") > -1) {
+            setStyle(document.querySelector("#virtual-machine"))
+        } else {
+            setStyle(document.querySelector("#wiki-home"))
+        }
+        setStyle(document.querySelector("#wiki"));
+    // Highligting for careers and sub-directories
+    } else if (url.indexOf("careers") > -1) {
+        if (url.indexOf("partners") > -1) {
+            setStyle(document.querySelector("#partners"))
+        } else if (url.indexOf("opportunities") > -1) {
+            setStyle(document.querySelector("#opportunities"))
+        } else {
+            setStyle(document.querySelector("#careers-home"))
+        }
+        setStyle(document.querySelector("#careers"));
+    // Highligting for sessions, committee and contact and the main home
+    } else if (url.indexOf("sessions") > -1) {
+        setStyle(document.querySelector("#sessions"));
+    } else if (url.indexOf("committee") > -1) {
+        setStyle(document.querySelector("#committee"));
+    } else if (url.indexOf("contact") > -1) {
+        setStyle(document.querySelector("#contact"));
+    } else if (url.indexOf("") > -1) {
+        setStyle(document.querySelector("#home"));
     }
 }
 
