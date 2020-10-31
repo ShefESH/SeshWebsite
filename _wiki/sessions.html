@@ -29,6 +29,13 @@ custom_css: wikisessions
             <div class="text">
                 <a href="{{ path }}">{{ item.title }} - [{{ item.type }}]</a>
                 <p>Released in {{ item.date | date: '%B, %Y' }} by {{ item.by }}
+                {% if item.pdf-file-name != nil %}
+                    {% capture pdf-path %}
+                        /assets/wiki/{{ item.pdf-file-name }}
+                    {% endcapture %}
+                    <br>
+                    <a href="{{ pdf-path }}">PDF Version</a>
+                {% endif %}
             </div>
         </div>
     {% endfor %}
