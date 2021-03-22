@@ -21,4 +21,150 @@ With all that said, let's jump into the full writeup.
 
 ## Enumeration
 
+### Nmap
 
+We start off with an Nmap scan to discover what services are running on each of the box's ports
+
+`nmap -sC -sV -v -oA nmap/ 10.10.10.215`
+
+This gives us the following output:
+
+```
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-11-12 14:18 GMT
+NSE: Loaded 151 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:18
+Completed NSE at 14:18, 0.00s elapsed
+Initiating NSE at 14:18
+Completed NSE at 14:18, 0.00s elapsed
+Initiating NSE at 14:18
+Completed NSE at 14:18, 0.00s elapsed
+Initiating Ping Scan at 14:18
+Scanning 10.10.10.215 [4 ports]
+Completed Ping Scan at 14:18, 0.16s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 14:18
+Scanning academy.htb (10.10.10.215) [1000 ports]
+Discovered open port 22/tcp on 10.10.10.215
+Discovered open port 80/tcp on 10.10.10.215
+Increasing send delay for 10.10.10.215 from 0 to 5 due to max_successful_tryno increase to 4
+Increasing send delay for 10.10.10.215 from 5 to 10 due to 51 out of 168 dropped probes since last increase.
+Increasing send delay for 10.10.10.215 from 10 to 20 due to max_successful_tryno increase to 5
+Completed SYN Stealth Scan at 14:18, 13.32s elapsed (1000 total ports)
+Initiating Service scan at 14:18
+Scanning 2 services on academy.htb (10.10.10.215)
+Completed Service scan at 14:19, 15.43s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.10.215.
+Initiating NSE at 14:19
+Completed NSE at 14:20, 51.23s elapsed
+Initiating NSE at 14:20
+Completed NSE at 14:20, 9.22s elapsed
+Initiating NSE at 14:20
+Completed NSE at 14:20, 0.00s elapsed
+Nmap scan report for academy.htb (10.10.10.215)
+Host is up (0.013s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Hack The Box Academy
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 14:20
+Completed NSE at 14:20, 0.00s elapsed
+Initiating NSE at 14:20
+Completed NSE at 14:20, 0.00s elapsed
+Initiating NSE at 14:20
+Completed NSE at 14:20, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 90.63 seconds
+           Raw packets sent: 1314 (57.792KB) | Rcvd: 1229 (49.168KB)
+```
+
+We can see that port 22 and 80 are open, suggesting SSH (standard) and a web server. The nmap scan also revealed the Virtual Host Domain of the website to be `academy.htb`, which we can add to our hosts file using `nano /etc/hosts`:
+
+```
+127.0.0.1       localhost
+127.0.1.1       kali
+10.10.10.215    academy.htb
+```
+
+This now allows us to visit the website at `https://academy.htb`
+
+### Gobuster
+
+Now we know port 80 is open we can set off a gobuster scan to discover some webpages.
+
+After a brief look at the site, we can see it runs on php - so we use the `-x php` flag to append the `.php` extension to our requests.
+
+```
+gobuster dir -u http://academy.htb -w /usr/share/wordlists/dirb/common.txt -x php
+===============================================================
+Gobuster v3.0.1
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
+===============================================================
+[+] Url:            http://academy.htb
+[+] Threads:        10
+[+] Wordlist:       /usr/share/wordlists/dirb/common.txt
+[+] Status codes:   200,204,301,302,307,401,403
+[+] User Agent:     gobuster/3.0.1
+[+] Extensions:     php
+[+] Timeout:        10s
+===============================================================
+2021/03/22 22:43:09 Starting gobuster
+===============================================================
+/.hta (Status: 403)
+/.hta.php (Status: 403)
+/.htaccess (Status: 403)
+/.htaccess.php (Status: 403)
+/.htpasswd (Status: 403)
+/.htpasswd.php (Status: 403)
+/admin.php (Status: 200)
+/admin.php (Status: 200)
+/config.php (Status: 200)
+/home.php (Status: 302)
+/images (Status: 301)
+/index.php (Status: 200)
+/index.php (Status: 200)
+/login.php (Status: 200)
+/register.php (Status: 200)
+/server-status (Status: 403)
+===============================================================
+2021/03/22 22:43:30 Finished
+===============================================================
+```
+
+We see from this scan that there is an `admin.php` page that we are denied access to at this point - but after poking around the site we may be able to access it.
+
+
+### academy.htb
+
+The home page is pretty basic, and has a simple login form at `/login.php`. We can try a couple of basic tests, such as the common credentials `admin:password` and `admin:admin` (no success), and a basic SQL injection test in the username field by submitting a `'` character. The single quote is URL encoded in the request, and no SQL errors are thrown. We could try a basic injection with `' OR 1=1;--` in the username or password field, or set off `sqlmap`, but for now let's try registering an account and see if that unlocks anything interesting.
+
+We can register an account at `/register.php`. This takes us to a mockup Academy e-learning page. All the links seem to be dead, and we don't seem to be able to do anything with the page. We also can't get into `/admin.php` still. So let's take a look at the register request in Burp Suite.
+
+```
+POST /register.php HTTP/1.1
+Host: academy.htb
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://academy.htb/register.php
+
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 66
+Cookie: PHPSESSID=gkrrf2lrjp1ge5qpsosje0un2n
+Connection: close
+Upgrade-Insecure-Requests: 1
+
+uid=testuser&password=testpassword&confirm=testpassword&roleid=0
+```
+
+We see there is a `roleid` parameter in the request, but there was no Role ID field in the registration form. Inspecting the source code, we see the following hidden field: `<input type="hidden" value="0" name="roleid" />`. I suspect the `roleid` parameter may have something to do with the permissions of the new user.
+
+Resubmitting this request with a new username and `roleid=1` successfully registers us an account - and when we visit `/admin.php`, we can see the page!
