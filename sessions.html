@@ -13,7 +13,8 @@ custom_css: sessions
 <p>You can also view the slides for all sessions so far on our <a href="/wiki/sessions">wiki</a></p>
 
 <div id="sessions">
-    {% for item in site.sessions %}
+    {% assign sessions = site.sessions | reverse%}
+    {% for item in sessions %}
     {% assign currentSection = item.path | split: "/" %}
     {% if lastSection != currentSection[1] %}
         <div class="heading"><h3>{{ currentSection[1] }}</h3></div>
