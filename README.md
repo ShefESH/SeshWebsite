@@ -7,6 +7,27 @@ Built with [Jekyll](https://jekyllrb.com/)
 
 ## Setup
 
+### The simple way (Docker-compose)
+
+[Install Docker and Docker-Compose](https://docs.docker.com/compose/install/)
+
+Download the repository
+
+`git clone git@github.com:ShefESH/SeshWebsite.git`
+
+
+Navigate into the repository
+
+`cd SeshWebsite`
+
+Run the docker-compose script
+
+`docker-compose up`
+
+You're done! You should now be able to live edit the website on your host machine and have the container live update 
+the website. 
+
+### The manual way
 To host this website locally, follow these steps
 
 **Clone this repository:**
