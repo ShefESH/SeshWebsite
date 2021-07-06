@@ -1,0 +1,23 @@
+---
+layout: default
+title: Former Committee
+custom_css: committee
+---
+
+<h3 class="title-center">Meet the former committee members:</h3>
+
+<div id="profiles">
+    {% for item in site.committee_old %}
+        <div class="committee-profile">
+            <div class="text">
+                <h3>{{ item.role }}</h3>
+                <h4>{{ item.name }}</h4>
+                <p>{{ item.bio }}</p>
+            </div>
+            {% capture path %}
+                /assets/images/committee/{{ item.image-name }}
+            {% endcapture %}
+            <img src="{{ path }}" alt="Picture of {{ item.name }}">
+        </div>
+    {% endfor %}
+</div>
