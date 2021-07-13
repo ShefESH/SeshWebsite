@@ -28,7 +28,7 @@ custom_css: sessions
                 /assets/wiki/{{ item.file-name }}
             {% endcapture %}
             <br>
-            <a href="{{path}}">{{ item.type}} session slides</a>
+            <a href="{{path}}" target="_blank">{{ item.type}} session slides</a>
         {% endif %}
 
         {% if item.pdf-file-name != nil %}
@@ -41,7 +41,7 @@ custom_css: sessions
             {% else %}
                 <br>
             {% endif %}
-            <a href="{{ pdf-path }}">PDF session slides</a>
+            <a href="{{ pdf-path }}" target="_blank">PDF session slides</a>
         {% endif %}
 
     </div>
