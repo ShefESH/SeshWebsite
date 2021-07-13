@@ -10,8 +10,6 @@ custom_css: sessions
 
 <p>For step by step instructions on accessing our sessions and recordings, <a href="/sessions/access">click here</a></p>
 
-<p>You can also view the slides for all sessions so far on our <a href="/wiki/sessions">wiki</a></p>
-
 <div id="sessions">
     {% assign sessions = site.sessions | reverse%}
     {% for item in sessions %}
@@ -24,6 +22,28 @@ custom_css: sessions
         <h4>{{ item.date | date_to_string }} – {{ item.title }}</h4>
         <h5>Presented by {{ item.presenter }}</h5>
         <p>{{ item.content }}</p>
+
+        {% if item.file-name != nul %}
+            {% capture path %}
+                /assets/wiki/{{ item.file-name }}
+            {% endcapture %}
+            <br>
+            <a href="{{path}}">{{ item.type}} session slides</a>
+        {% endif %}
+
+        {% if item.pdf-file-name != nil %}
+            {% capture pdf-path %}
+                /assets/wiki/{{ item.pdf-file-name }}
+            {% endcapture %}
+
+            {% if item.file-name != nul %}
+                or
+            {% else %}
+                <br>
+            {% endif %}
+            <a href="{{ pdf-path }}">PDF session slides</a>
+        {% endif %}
+
     </div>
     {% endfor %}
 </div>
