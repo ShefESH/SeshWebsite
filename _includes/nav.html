@@ -1,19 +1,27 @@
 <nav class="nav">
     <ul>
-        <li class="menu-link" > <a id="home" href="/">Home</a> </li>
-        <li class="menu-link">
+        <li class="menu-link hamburger-menu" onClick="toggleNavExpansion()">
+            <!-- 
+                "Bars Icon" by Font Awesome is licensed under CC BY 4.0 
+                Source: https://fontawesome.com/v5.15/icons/bars?style=solid
+                License: https://creativecommons.org/licenses/by/4.0/
+            -->
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+        </li>
+        <li class="menu-link mobile-hidden" > <a id="home" href="/">Home</a> </li>
+        <li class="menu-link mobile-hidden">
             <a id="sessions" href="/sessions">Sessions</a>
         </li>
-        <li class="menu-link">
+        <li class="menu-link mobile-hidden">
             <a id="committee" href="/committee">Committee</a>
         </li>
-        <li class="menu-link">
+        <li class="menu-link mobile-hidden">
             <a id="contact" href="/contact">Contact</a>
         </li>
-        <li class="menu-link">
+        <li class="menu-link mobile-hidden">
         <a href="https://su.sheffield.ac.uk/activities/view/ethical-student-hackers-society" target="_blank" style="margin: 0;">Join us!</a>
         </li>
-        <li class="dropdown menu-link" href="/careers">
+        <li class="dropdown menu-link mobile-hidden" href="/careers">
             <button id="careers" class="dropbtn">Careers</button>
             <div class="dropdown-content">
                 <a id="careers-home" href="/careers">Careers Home</a>
@@ -21,7 +29,7 @@
                 <a id="opportunities" href="/careers/opportunities">Opportunities</a>
             </div>
         </li>
-        <li class="dropdown menu-link" href="/wiki">
+        <li class="dropdown menu-link mobile-hidden" href="/wiki">
             <button id="wiki" class="dropbtn">Wiki</button>
             <div class="dropdown-content">
                 <a id="wiki-home" href="/wiki">Wiki Home</a>
