@@ -1,27 +1,32 @@
 <nav class="nav">
     <ul>
-        <li class="menu-link" > <a id="home" href="/">Home</a> </li>
-        <li class="menu-link">
+        <li class="menu-link hamburger-menu" onClick="toggleNavExpansion()">
+            <br>
+            <i class="fas fa-bars"></i>
+            <br>
+        </li>
+        <li class="menu-link mobile-hidden" > <a id="home" href="/">Home</a> </li>
+        <li class="menu-link mobile-hidden">
             <a id="sessions" href="/sessions">Sessions</a>
         </li>
-        <li class="menu-link">
+        <li class="menu-link mobile-hidden">
             <a id="committee" href="/committee">Committee</a>
         </li>
-        <li class="menu-link">
+        <li class="menu-link mobile-hidden">
             <a id="contact" href="/contact">Contact</a>
         </li>
-        <li class="menu-link">
+        <li class="menu-link mobile-hidden">
         <a href="https://su.sheffield.ac.uk/activities/view/ethical-student-hackers-society" target="_blank" style="margin: 0;">Join us!</a>
         </li>
-        <li class="dropdown menu-link" href="/careers">
+        <li class="dropdown menu-link mobile-hidden" href="/careers">
             <button id="careers" class="dropbtn">Careers</button>
-            <div class="dropdown-content">
+            <div class="dropdown-content">  
                 <a id="careers-home" href="/careers">Careers Home</a>
                 <a id="partners" href="/careers/partners">Partners</a>
                 <a id="opportunities" href="/careers/opportunities">Opportunities</a>
             </div>
         </li>
-        <li class="dropdown menu-link" href="/wiki">
+        <li class="dropdown menu-link mobile-hidden" href="/wiki">
             <button id="wiki" class="dropbtn">Wiki</button>
             <div class="dropdown-content">
                 <a id="wiki-home" href="/wiki">Wiki Home</a>
