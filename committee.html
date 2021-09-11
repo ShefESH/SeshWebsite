@@ -18,6 +18,16 @@ custom_css: committee
                 /assets/images/committee/{{ item.image-name }}
             {% endcapture %}
             <img src="{{ path }}" alt="Picture of {{ item.name }}">
+            
+            <p>{{ item.contact }}</p>
+
+            {% capture contact}
+                /assets/images/icons/{{ item.contact-name }}
+            {% endcapture %}
+
+            <a href="{{ item.contact-link }}" target="_blank">
+                <img src="{{ contact }}" alt="The {{ item.contact-name }} logo">
+            </a>
         </div>
     {% endfor %}
 </div>
