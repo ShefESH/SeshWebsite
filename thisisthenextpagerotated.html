@@ -1,0 +1,19 @@
+---
+layout: default
+title: Secret(er(er)) page
+---
+
+???
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+<script>
+    // console.log(CryptoJS.AES.decrypt("thisistheend", "Secret Passphrase").toString(CryptoJS.enc.Utf8));
+    function x(a, b) {
+        var res = "",
+            i = a.length,
+            j = b.length;
+        while (i-->0 && j-->0)
+            res = (parseInt(a.charAt(i), 16) ^ parseInt(b.charAt(j), 16)).toString(16) + res;
+        return res;
+    }
+</script>
