@@ -13,21 +13,23 @@ custom_css: committee
                 <h3>{{ item.role }}</h3>
                 <h4>{{ item.name }}</h4>
                 <p>{{ item.bio }}</p>
+                <p>{{ item.contact }}</p>
+
+                {% capture icon %}
+                /assets/images/icons/{{ item.contact-name }}
+                {% endcapture %}
+
+                <a href="{{ item.contact-link }}" target="_blank">
+                <img src="{{ icon }}" alt="The {{ item.contact-name }} logo">
+                </a>
+
             </div>
+            
             {% capture path %}
                 /assets/images/committee/{{ item.image-name }}
             {% endcapture %}
             <img src="{{ path }}" alt="Picture of {{ item.name }}">
-            
-            <p>{{ item.contact }}</p>
 
-            {% capture icon %}
-                /assets/images/icons/{{ item.contact-name }}
-            {% endcapture %}
-
-            <a href="{{ item.contact-link }}" target="_blank">
-                <img src="{{ icon }}" alt="The {{ item.contact-name }} logo">
-            </a>
         </div>
     {% endfor %}
 </div>
