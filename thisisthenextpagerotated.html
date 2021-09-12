@@ -1,0 +1,20 @@
+---
+layout: default
+title: Secret(er(er)) page
+---
+
+???
+
+<!-- [17, 3, 11, 7, 1, 16, 19, 17, 13, 23, 22, 21] -->
+
+<script>
+    function x(a) {
+        k = "ekbthcgyhrxq";
+        var r = "",
+            i = a.length,
+            j = k.length;
+        while (i-->0 && j-->0)
+            r = String.fromCharCode((k.charCodeAt(i) || 0) ^ (a[j] || 0)) + r;
+        return r.toString(16);
+    }
+</script>
