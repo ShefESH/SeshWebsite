@@ -13,13 +13,57 @@ custom_css: committee
                 <h3>{{ item.role }}</h3>
                 <h4>{{ item.name }}</h4>
                 <p>{{ item.bio }}</p>
+                <p>{{ item.contact }}:</p>
+
+                <!--The LinkedIn profile-->
+                {% if item.contact-name %}
+                
+                {% capture icon %}
+                /assets/images/icons/{{ item.contact-name }}
+                {% endcapture %}
+                
+                <a href="{{ item.contact-link }}" target="_blank">
+                    <img class="contact-icon" src="{{ icon }}" alt="The {{ item.contact-name }} logo">
+                </a>
+                
+                {% endif %}
+
+                <!--The Twitter profile-->
+                {% if item.twitter-name %}
+                
+                {% capture twitter %}
+                /assets/images/icons/{{ item.twitter-name }}
+                {% endcapture %}
+                
+                <a href="{{ item.twitter-link }}" target="_blank">
+                    <img class="contact-icon" src="{{ twitter }}" alt="The {{ item.twitter-name }} logo">
+                </a>
+                {% endif %}
+                
+                <!--The personal website-->
+                {% if item.personal-name %}
+                
+                {% capture personal %}
+                /assets/images/icons/{{ item.personal-name }}
+                {% endcapture %}
+                
+                <a href="{{ item.personal-link }}" target="_blank">
+                    <img class="contact-icon" src="{{ personal }}"
+                     alt="Their personal website" title="Their personal website">
+                </a>
+                {% endif %}
+
             </div>
+
             {% capture path %}
                 /assets/images/committee/{{ item.image-name }}
             {% endcapture %}
-            <img src="{{ path }}" alt="Picture of {{ item.name }}">
+            <img class="committee-picture" src="{{ path }}" alt="Picture of {{ item.name }}">
+
         </div>
     {% endfor %}
-    <br>
-    <a href = "/committee_old.html">Former Committee</a>
+</div>
+
+<div class="former-committee">
+    <p><a href = "/committee_old.html">Former Committee</a></p>
 </div>

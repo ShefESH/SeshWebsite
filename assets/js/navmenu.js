@@ -57,3 +57,22 @@ function stickyNav() {
 }
 
 window.addEventListener('scroll', stickyNav)
+
+var mobile_hidden = true;
+const nav_el = document.querySelector(".nav ul").children;
+
+/*
+Toggles the Navigation Bar Visibility for Mobile
+*/
+function toggleNavExpansion(){
+    mobile_hidden = !mobile_hidden;
+    //Goes through all nav li elements excluding the hamburger menu button and toggles the mobile-hidden class for visibility.
+    for (var x = 1; x < nav_el.length; x++){
+        if (mobile_hidden){
+            nav_el[x].classList.add('mobile-hidden');
+        }
+        else{
+            nav_el[x].classList.remove('mobile-hidden');
+        }
+    }
+}

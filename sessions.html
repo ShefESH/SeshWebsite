@@ -4,13 +4,11 @@ title: Sessions
 custom_css: sessions
 ---
 
-<p>While we strongly encourage participants in the society to <a href="https://su.sheffield.ac.uk/activities/view/ethical-student-hackers-society">buy a membership</a>, it's important that interested individuals have the opportunity to trial a session before joining. To that end, we offer one free session a year to non-members; simply email us at <a href="mailto:ethicalhackers@sheffield.ac.uk">ethicalhackers@sheffield.ac.uk</a> for a guest-link to the session.</p>
+<p>While we strongly encourage participants in the society to <a href="https://su.sheffield.ac.uk/activities/view/ethical-student-hackers-society" target="_blank">buy a membership</a>, it's important that interested individuals have the opportunity to trial a session before joining. To that end, we offer one free session a year to non-members; simply email us at <a href="mailto:ethicalhackers@sheffield.ac.uk">ethicalhackers@sheffield.ac.uk</a> for a guest-link to the session.</p>
 
 <p>Our regular sessions are hosted on Blackboard Collaborate, every Monday at 18:00 - 20:00 (ish). Members will be given access to our Blackboard Collaborate Organisation, from which they can view all sessions and recordings. Guests will receive a direct link to the session they have chosen!</p>
 
 <p>For step by step instructions on accessing our sessions and recordings, <a href="/sessions/access">click here</a></p>
-
-<p>You can also view the slides for all sessions so far on our <a href="/wiki/sessions">wiki</a></p>
 
 <div id="sessions">
     {% assign sessions = site.sessions | reverse%}
@@ -24,6 +22,28 @@ custom_css: sessions
         <h4>{{ item.date | date_to_string }} – {{ item.title }}</h4>
         <h5>Presented by {{ item.presenter }}</h5>
         <p>{{ item.content }}</p>
+
+        {% if item.file-name != nul %}
+            {% capture path %}
+                /assets/wiki/{{ item.file-name }}
+            {% endcapture %}
+            <br>
+            <a href="{{path}}" target="_blank">{{ item.type}} session slides</a>
+        {% endif %}
+
+        {% if item.pdf-file-name != nil %}
+            {% capture pdf-path %}
+                /assets/wiki/{{ item.pdf-file-name }}
+            {% endcapture %}
+
+            {% if item.file-name != nul %}
+                or
+            {% else %}
+                <br>
+            {% endif %}
+            <a href="{{ pdf-path }}" target="_blank">PDF session slides</a>
+        {% endif %}
+
     </div>
     {% endfor %}
 </div>

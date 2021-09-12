@@ -107,7 +107,6 @@ nav .dropbtn {
 
 nav .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 nav .dropdown-content {
@@ -186,8 +185,42 @@ end of code snippet
   font-size: x-large;
 }
 
-.menu-link {
-  display: inline-block;
+/*
+Sets width of hamburger-menu icon
+*/
+.hamburger-menu svg{
+  width: 20%;
+}
+
+/*
+Sets the default position for the list vertical and in the centre for visible mobile view
+*/
+.menu-link, .hamburger-menu {
+  justify-content: center;
+  display: flex;
+}
+
+.fa-bars{
+  font-size: 70px;
+}
+
+/*
+Hides the Hamburger menu for pcs and returns to horizontal format
+*/
+@media screen and (min-width: 1025px) {
+  .menu-link, nav .dropdown{
+    display: inline-block;
+    justify-content: none;
+  }
+  .hamburger-menu{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .mobile-hidden{
+    display: none;
+  }
 
 }
 
