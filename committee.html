@@ -20,11 +20,11 @@ custom_css: committee
                 {% endcapture %}
 
                 <a href="{{ item.contact-link }}" target="_blank">
-                <img src="{{ icon }}" alt="The {{ item.contact-name }} logo">
+                <img src="{{ icon }}" width="50px" height="50px" alt="The {{ item.contact-name }} logo">
                 </a>
 
             </div>
-            
+
             {% capture path %}
                 /assets/images/committee/{{ item.image-name }}
             {% endcapture %}
