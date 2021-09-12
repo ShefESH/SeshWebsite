@@ -5,15 +5,16 @@ title: Secret(er(er)) page
 
 ???
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+<!-- [17, 3, 11, 7, 1, 16, 19, 17, 13, 23, 22, 21] -->
+
 <script>
-    // console.log(CryptoJS.AES.decrypt("thisistheend", "Secret Passphrase").toString(CryptoJS.enc.Utf8));
-    function x(a, b) {
-        var res = "",
+    function x(a) {
+        k = "ekbthcgyhrxq";
+        var r = "",
             i = a.length,
-            j = b.length;
+            j = k.length;
         while (i-->0 && j-->0)
-            res = (parseInt(a.charAt(i), 16) ^ parseInt(b.charAt(j), 16)).toString(16) + res;
-        return res;
+            r = String.fromCharCode((k.charCodeAt(i) || 0) ^ (a[j] || 0)) + r;
+        return r.toString(16);
     }
 </script>
