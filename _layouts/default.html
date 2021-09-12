@@ -10,8 +10,11 @@
 
 <body>
     <div class="wrapper">
-        {% include banner.html %}
-        {% include nav.html %}
+        <div id="banner_nav_wrapper">
+            {% include banner.html %}
+            {% include nav.html %}
+        </div>
+        
         <div class="subpage_banner">
             <div class="separator">
                 <h2>{{ page.title }}</h2>

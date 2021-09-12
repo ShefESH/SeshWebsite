@@ -16,8 +16,24 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background-color: $backgroundColor
+  background-color: $backgroundColor;
 }
+
+#banner_nav_wrapper {
+  display: flex;
+  // flex-direction: row;
+  flex-direction: column;
+}
+
+// @media screen and (min-width: 1025px) {
+//   #banner_nav_wrapper {
+//     flex-direction: column;
+//   }
+// }
+
+
+
+// rules for banner
 
 .banner {
   width: 80%;
@@ -37,13 +53,14 @@ body {
 .banner h1 a {
   outline : none;
   text-decoration: none;
-  padding-left: 2%;
   color: $pinkColor;
 }
 
 .banner h1 a:visited {
   color: $pinkColor;
 }
+
+// rules for navbar
 
 .nav {
   width: 80%;
@@ -107,7 +124,6 @@ nav .dropbtn {
 
 nav .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 nav .dropdown-content {
@@ -131,6 +147,120 @@ nav .dropdown-content a:hover {
 
 nav .dropdown:hover .dropdown-content {
   display: block;
+}
+
+// rules for banner and navbar on mobile
+
+@media screen and (max-width: 1025px) {
+  // header {
+  //   width: 80%;
+  // }
+
+  .banner {
+    display: flex;
+    flex-direction: row;
+    padding: 0!important;
+    // padding: auto;
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 1.6rem;
+  }
+
+  .banner h1 a {
+    padding: 0;
+  }
+
+  // nav {
+  //   width: 20%;
+  // }
+
+  i {
+    max-width: 15px;
+    max-height: 15px;
+    font-size: 2px;
+  }
+
+  .banner img {
+    max-width: 80px;
+    max-height: 80px;
+    padding: 2% 5%;
+  }
+}
+
+@media screen and (max-width: 295px) {
+  #banner_nav_wrapper {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 622px) {
+  .banner h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .banner h1 {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .banner h1 {
+    font-size: 2.3rem;
+  }
+
+  .banner img {
+    max-width: 85px;
+    max-height: 85px;
+  }
+}
+
+// banner on PC
+
+@media screen and (min-width: 1025px) {
+  .banner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .banner img {
+    max-width: 140px;
+    max-height: 140px;
+    padding: 10px;
+  }
+
+  .banner h1 {
+    padding-left: 10px;
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 18px 12px;
+  }
+
+  // #banner_nav_wrapper {
+  //   display: flex;
+  //   flex-direction: row;
+  // }
 }
 
 a {
@@ -186,8 +316,50 @@ end of code snippet
   font-size: x-large;
 }
 
-.menu-link {
-  display: inline-block;
+/*
+Sets width of hamburger-menu icon
+*/
+.hamburger-menu svg{
+  width: 20%;
+}
+
+/*
+Sets the default position for the list vertical and in the centre for visible mobile view
+*/
+.menu-link, .hamburger-menu {
+  justify-content: center;
+  display: flex;
+}
+
+.fa-bars{
+  font-size: 70px;
+}
+
+@media screen and (max-width: 1025px) {
+  .fa-bars {
+    max-width: 40px;
+    max-height: 40px;
+    font-size: 40px;
+  }
+}
+
+/*
+Hides the Hamburger menu for pcs and returns to horizontal format
+*/
+@media screen and (min-width: 1025px) {
+  .menu-link, nav .dropdown{
+    display: inline-block;
+    justify-content: none;
+  }
+  .hamburger-menu{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .mobile-hidden{
+    display: none;
+  }
 
 }
 
