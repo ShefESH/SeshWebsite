@@ -62,7 +62,7 @@ body {
   display: inline;
 }
 
-.nav ul a {
+.nav ul a:not(#___gcse_0 *) {
   font-size: 1.2rem;
   outline : none;
   text-decoration: none;
@@ -87,7 +87,7 @@ nav.sticky {
   position: fixed;
 }
 
-nav button:hover, nav a:hover {
+nav button:hover, nav a:not(#___gcse_0 *):hover {
   border-radius: 5px;
   background-color: $backgroundColor;
 }
@@ -210,7 +210,7 @@ Hides the Hamburger menu for pcs and returns to horizontal format
 @media screen and (min-width: 1025px) {
   .menu-link, nav .dropdown{
     display: inline-block;
-    justify-content: none;
+    justify-content: unset;
   }
   .hamburger-menu{
     display: none;
@@ -219,7 +219,7 @@ Hides the Hamburger menu for pcs and returns to horizontal format
 
 @media screen and (max-width: 1025px) {
   .mobile-hidden{
-    display: none;
+    display: none !important;
   }
 
 }
@@ -243,3 +243,40 @@ Hides the Hamburger menu for pcs and returns to horizontal format
 .width-squish {
   width: 80%;
 }
+
+// search bar
+
+.gsc-control-cse{
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+}
+
+
+#___gcse_0 {
+  width: 100%;
+  margin: auto;
+}
+.gsc-search-button.gsc-search-button-v2, .gsc-search-button.gsc-search-button-v2:focus {
+  background-color: #00e7e7;
+  border-color: #00e7e7;
+}
+.gsc-search-button.gsc-search-button-v2:hover {
+  background-color: #eb3c68;
+  border-color: #eb3c68;
+  border-radius: 2px;
+}
+
+.nav ul .search {
+  font-size: 1.2rem;
+
+  outline : none;
+  text-decoration: none;
+  color: $lightBlue;
+  display: inline-block;
+  padding: 0 0.7em;
+  position: relative;
+  top: 1.2em;
+  width: 15em;
+}
+
