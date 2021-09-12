@@ -21,12 +21,12 @@ custom_css: committee
             
             <p>{{ item.contact }}</p>
 
-            {% capture contact}
+            {% capture icon %}
                 /assets/images/icons/{{ item.contact-name }}
             {% endcapture %}
 
             <a href="{{ item.contact-link }}" target="_blank">
-                <img src="{{ contact }}" alt="The {{ item.contact-name }} logo">
+                <img src="{{ icon }}" alt="The {{ item.contact-name }} logo">
             </a>
         </div>
     {% endfor %}
