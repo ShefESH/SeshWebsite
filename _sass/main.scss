@@ -382,3 +382,71 @@ Hides the Hamburger menu for pcs and returns to horizontal format
 .width-squish {
   width: 80%;
 }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.blue {
+  color: $lightBlue;
+  font-weight: bold;
+}
+
+.pink {
+  color: $pinkColor;
+}
+
+// index intro styling
+
+@media screen and (max-width: 1025px) {
+  #index_intro h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #index_intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px 0 0;
+  }
+
+  #index_intro h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+#index_intro img{
+    height: 250px;
+    //width: 250px;
+}
+
+#index_intro_wrap {
+    padding: 0;
+}
+
+#index_intro_wrap.wrapper {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .index-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #index-logo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .index-flex {
+    display: flex;
+    flex-direction: row;
+  }
+}
