@@ -16,8 +16,24 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background-color: $backgroundColor
+  background-color: $backgroundColor;
 }
+
+#banner_nav_wrapper {
+  display: flex;
+  // flex-direction: row;
+  flex-direction: column;
+}
+
+// @media screen and (min-width: 1025px) {
+//   #banner_nav_wrapper {
+//     flex-direction: column;
+//   }
+// }
+
+
+
+// rules for banner
 
 .banner {
   width: 80%;
@@ -44,13 +60,14 @@ body {
 .banner h1 a {
   outline : none;
   text-decoration: none;
-  padding-left: 2%;
   color: $pinkColor;
 }
 
 .banner h1 a:visited {
   color: $pinkColor;
 }
+
+// rules for navbar
 
 .nav {
   width: 80%;
@@ -139,6 +156,120 @@ nav .dropdown:hover .dropdown-content {
   display: block;
 }
 
+// rules for banner and navbar on mobile
+
+@media screen and (max-width: 1025px) {
+  // header {
+  //   width: 80%;
+  // }
+
+  .banner {
+    display: flex;
+    flex-direction: row;
+    padding: 0!important;
+    // padding: auto;
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 1.6rem;
+  }
+
+  .banner h1 a {
+    padding: 0;
+  }
+
+  // nav {
+  //   width: 20%;
+  // }
+
+  i {
+    max-width: 15px;
+    max-height: 15px;
+    font-size: 2px;
+  }
+
+  .banner img {
+    max-width: 80px;
+    max-height: 80px;
+    padding: 2% 5%;
+  }
+}
+
+@media screen and (max-width: 295px) {
+  #banner_nav_wrapper {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 622px) {
+  .banner h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .banner h1 {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .banner h1 {
+    font-size: 2.3rem;
+  }
+
+  .banner img {
+    max-width: 85px;
+    max-height: 85px;
+  }
+}
+
+// banner on PC
+
+@media screen and (min-width: 1025px) {
+  .banner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .banner img {
+    max-width: 140px;
+    max-height: 140px;
+    padding: 10px;
+  }
+
+  .banner h1 {
+    padding-left: 10px;
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 18px 12px;
+  }
+
+  // #banner_nav_wrapper {
+  //   display: flex;
+  //   flex-direction: row;
+  // }
+}
+
 a {
   outline : none;
   text-decoration: none;
@@ -209,6 +340,14 @@ Sets the default position for the list vertical and in the centre for visible mo
 
 .fa-bars{
   font-size: 70px;
+}
+
+@media screen and (max-width: 1025px) {
+  .fa-bars {
+    max-width: 40px;
+    max-height: 40px;
+    font-size: 40px;
+  }
 }
 
 /*
@@ -296,3 +435,70 @@ Hides the Hamburger menu for pcs and returns to horizontal format
   margin-top: 1em;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.blue {
+  color: $lightBlue;
+  font-weight: bold;
+}
+
+.pink {
+  color: $pinkColor;
+}
+
+// index intro styling
+
+@media screen and (max-width: 1025px) {
+  #index_intro h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #index_intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px 0 0;
+  }
+
+  #index_intro h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+#index_intro img{
+    height: 250px;
+    //width: 250px;
+}
+
+#index_intro_wrap {
+    padding: 0;
+}
+
+#index_intro_wrap.wrapper {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .index-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #index-logo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .index-flex {
+    display: flex;
+    flex-direction: row;
+  }
+}
