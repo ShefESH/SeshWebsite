@@ -222,6 +222,15 @@ Hides the Hamburger menu for pcs and returns to horizontal format
   .hamburger-menu{
     display: none;
   }
+
+  .search {
+    position: relative !important;
+    width: 15em !important;
+  }
+
+  #___gcse_0 {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 1025px) {
@@ -261,7 +270,7 @@ Hides the Hamburger menu for pcs and returns to horizontal format
 
 
 #___gcse_0 {
-  width: 100%;
+  width: 50%;
   margin: auto;
 }
 .gsc-search-button.gsc-search-button-v2, .gsc-search-button.gsc-search-button-v2:focus {
@@ -281,9 +290,9 @@ Hides the Hamburger menu for pcs and returns to horizontal format
   text-decoration: none;
   color: $lightBlue;
   display: inline-block;
-  padding: 0 0.7em;
-  position: relative;
+  position: unset;
   top: 1.2em;
-  width: 15em;
+  width: 100%;
+  margin-top: 1em;
 }
 
