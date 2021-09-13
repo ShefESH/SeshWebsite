@@ -4,7 +4,7 @@ title: Committee
 custom_css: committee
 ---
 
-<h3 class="title-center">Meet the committee</h3>
+<h3 class="title-center">Meet the committee!</h3>
 
 <div id="profiles">
     {% for item in site.committee %}
@@ -15,13 +15,43 @@ custom_css: committee
                 <p>{{ item.bio }}</p>
                 <p>{{ item.contact }}:</p>
 
+                <!--The LinkedIn profile-->
+                {% if item.contact-name %}
+                
                 {% capture icon %}
                 /assets/images/icons/{{ item.contact-name }}
                 {% endcapture %}
-
+                
                 <a href="{{ item.contact-link }}" target="_blank">
-                <img class="contact-icon" src="{{ icon }}" alt="The {{ item.contact-name }} logo">
+                    <img class="contact-icon" src="{{ icon }}" alt="The {{ item.contact-name }} logo">
                 </a>
+                
+                {% endif %}
+
+                <!--The Twitter profile-->
+                {% if item.twitter-name %}
+                
+                {% capture twitter %}
+                /assets/images/icons/{{ item.twitter-name }}
+                {% endcapture %}
+                
+                <a href="{{ item.twitter-link }}" target="_blank">
+                    <img class="contact-icon" src="{{ twitter }}" alt="The {{ item.twitter-name }} logo">
+                </a>
+                {% endif %}
+                
+                <!--The personal website-->
+                {% if item.personal-name %}
+                
+                {% capture personal %}
+                /assets/images/icons/{{ item.personal-name }}
+                {% endcapture %}
+                
+                <a href="{{ item.personal-link }}" target="_blank">
+                    <img class="contact-icon" src="{{ personal }}"
+                     alt="Their personal website" title="Their personal website">
+                </a>
+                {% endif %}
 
             </div>
 
