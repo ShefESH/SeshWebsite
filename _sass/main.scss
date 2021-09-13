@@ -34,6 +34,13 @@ body {
   margin: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .banner h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
 .banner h1 a {
   outline : none;
   text-decoration: none;
