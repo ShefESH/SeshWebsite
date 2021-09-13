@@ -217,7 +217,7 @@ Hides the Hamburger menu for pcs and returns to horizontal format
 @media screen and (min-width: 1025px) {
   .menu-link, nav .dropdown{
     display: inline-block;
-    justify-content: none;
+    justify-content: unset;
   }
   .hamburger-menu{
     display: none;
