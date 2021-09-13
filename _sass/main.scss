@@ -462,7 +462,6 @@ Hides the Hamburger menu for pcs and returns to horizontal format
   min-width: 350px;
   background-color: $backgroundColorLight;
   display: flex;
-  margin: 2% 10px;
   border-radius: 4px;
   flex-direction: column;
   text-align: center;
@@ -470,7 +469,7 @@ Hides the Hamburger menu for pcs and returns to horizontal format
   border: black;
   border-width: 2px;
   border-style: solid;
-  margin: 0 5%;
+  margin: 1% 5%;
 }
 
 .photo-showcase img {
@@ -486,11 +485,12 @@ Hides the Hamburger menu for pcs and returns to horizontal format
   border-style: solid;
 }
 
-#what_we_do_photos {
+#what_we_do_photos, #events_showcases {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
+  padding-bottom: 0;
 }
 
 // photos as rows, but smaller
@@ -522,7 +522,6 @@ Hides the Hamburger menu for pcs and returns to horizontal format
     width: 70%;
     min-width: 370px;
     max-width: 450px;
-    margin-bottom: 2%;
   }
 
   .photo-showcase img {
