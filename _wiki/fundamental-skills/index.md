@@ -101,66 +101,66 @@ Remember, these are the fundamentals you'll need for each stage - we don't expec
 
 ### Web
 
-Inspecting Webpages with the Developer Tools: [Web 1 - Inspecting a Webpage](https://shefesh.com/wiki/fundamental-skills/web-1---inspecting-a-webpage.pdf)
+Inspecting Webpages with the Developer Tools: [Web 1 - Inspecting a Webpage](/wiki/fundamental-skills/web-1---inspecting-a-webpage.pdf) - **Ready to view!**
 
-The Fundamentals of Web Requests: [Web 2 - Understanding HTTP Requests](https://shefesh.com/wiki/fundamental-skills/web-2---understanding-http-requests.pdf)
+The Fundamentals of Web Requests: [Web 2 - Understanding HTTP Requests](/wiki/fundamental-skills/web-2---understanding-http-requests.pdf) - **Ready to view!**
 
-Learning to Use a Powerful Web Proxy: [Web 3 - Burp Suite](https://shefesh.com/wiki/fundamental-skills/web-3---burp-suite.pdf)
+Learning to Use a Powerful Web Proxy: [Web 3 - Burp Suite](/wiki/fundamental-skills/web-3---burp-suite.pdf)
 
-Site Technologies & Features: [Web 4 - Common Site Features](https://shefesh.com/wiki/fundamental-skills/web-4---common-site-features.pdf)
+Site Technologies & Features: [Web 4 - Common Site Features](/wiki/fundamental-skills/web-4---common-site-features.pdf)
 
-An Overview of Site Security: [Web 5 - Web Security Overview](https://shefesh.com/wiki/fundamental-skills/web-5---web-security-overview.pdf)
+An Overview of Site Security: [Web 5 - Web Security Overview](/wiki/fundamental-skills/web-5---web-security-overview.pdf)
 
 ### Networking
 
-Locating Hosts on the Internet: [Networking 1 - IP & DNS](https://shefesh.com/wiki/fundamental-skills/networking-1---ip-&-dns.pdf)
+Locating Hosts on the Internet: [Networking 1 - IP & DNS](/wiki/fundamental-skills/networking-1---ip-&-dns.pdf)
 
-How Hosts Communicate: [Networking 2 - Protocols](https://shefesh.com/wiki/fundamental-skills/networking-2---protocols.pdf)
+How Hosts Communicate: [Networking 2 - Protocols](/wiki/fundamental-skills/networking-2---protocols.pdf)
 
-Using Proxies to View and Redirect Traffic: [Networking 3 - Proxies](https://shefesh.com/wiki/fundamental-skills/networking-3---proxies.pdf)
+Using Proxies to View and Redirect Traffic: [Networking 3 - Proxies](/wiki/fundamental-skills/networking-3---proxies.pdf)
 
 ### Linux
 
-The Linux File System: [Linux 1 - Navigating a File System](https://shefesh.com/wiki/fundamental-skills/linux-1---navigating-a-file-system.pdf)
+The Linux File System: [Linux 1 - Navigating a File System](/wiki/fundamental-skills/linux-1---navigating-a-file-system.pdf)
 
-Installing New Software: [Linux 2 - Downloading Files and Packages](https://shefesh.com/wiki/fundamental-skills/linux-2---downloading-files-and-packages.pdf)
+Installing New Software: [Linux 2 - Downloading Files and Packages](/wiki/fundamental-skills/linux-2---downloading-files-and-packages.pdf)
 
-Linux File Permissions: [Linux 3 - File Permissions](https://shefesh.com/wiki/fundamental-skills/linux-3---file-permissions.pdf)
+Linux File Permissions: [Linux 3 - File Permissions](/wiki/fundamental-skills/linux-3---file-permissions.pdf)
 
 ### Windows
 
-Using Different Windows Command Line Interfaces: [Windows 1 - Windows Command Lines](https://shefesh.com/wiki/fundamental-skills/windows-1---windows-command-lines.pdf)
+Using Different Windows Command Line Interfaces: [Windows 1 - Windows Command Lines](/wiki/fundamental-skills/windows-1---windows-command-lines.pdf)
 
 ### Tools
 
-Curl, a useful command line tool for making HTTP requests: [Tools 1 - Curl](https://shefesh.com/wiki/fundamental-skills/tools-1---curl.pdf)
+Curl, a useful command line tool for making HTTP requests: [Tools 1 - Curl](/wiki/fundamental-skills/tools-1---curl.pdf)
 
-Feroxbuster, a scanner for finding hidden pages on a website: [Tools 2 - Feroxbuster](https://shefesh.com/wiki/fundamental-skills/tools-2---feroxbuster.pdf)
+Feroxbuster, a scanner for finding hidden pages on a website: [Tools 2 - Feroxbuster](/wiki/fundamental-skills/tools-2---feroxbuster.pdf)
 
-Nmap, a powerful port scanner: [Tools 3 - Nmap](https://shefesh.com/wiki/fundamental-skills/tools-3---nmap.pdf)
+Nmap, a powerful port scanner: [Tools 3 - Nmap](/wiki/fundamental-skills/tools-3---nmap.pdf)
 
-Wireshark, a network monitoring tool: [Tools 4 - Wireshark](https://shefesh.com/wiki/fundamental-skills/tools-4---wireshark.pdf)
+Wireshark, a network monitoring tool: [Tools 4 - Wireshark](/wiki/fundamental-skills/tools-4---wireshark.pdf)
 
-Netcat, a networking 'swiss-army knife': [Tools 5 - Netcat](https://shefesh.com/wiki/fundamental-skills/tools-5---netcat.pdf)
+Netcat, a networking 'swiss-army knife': [Tools 5 - Netcat](/wiki/fundamental-skills/tools-5---netcat.pdf)
 
 ### Penetration Testing Skills
 
-Outline of a Penetration Test: [Pentesting 1 - Outline of a Penetration Test](https://shefesh.com/wiki/fundamental-skills/pentesting-1---outline-of-a-penetration-test.pdf)
+Outline of a Penetration Test: [Pentesting 1 - Outline of a Penetration Test](/wiki/fundamental-skills/pentesting-1---outline-of-a-penetration-test.pdf)
 
-Basics of Shells: [Pentesting 2 - Basics of Shells](https://shefesh.com/wiki/fundamental-skills/pentesting-2---basics-of-shells.pdf)
+Basics of Shells: [Pentesting 2 - Basics of Shells](/wiki/fundamental-skills/pentesting-2---basics-of-shells.pdf)
 
-File Transfers: [Pentesting 3 - File Transfers](https://shefesh.com/wiki/fundamental-skills/pentesting-3---file-transfers.pdf)
+File Transfers: [Pentesting 3 - File Transfers](/wiki/fundamental-skills/pentesting-3---file-transfers.pdf)
 
-Accessing a Computer Remotely: [Pentesting 4 - Remote Access to a Computer](https://shefesh.com/wiki/fundamental-skills/pentesting-4---remote-access-to-a-computer.pdf)
+Accessing a Computer Remotely: [Pentesting 4 - Remote Access to a Computer](/wiki/fundamental-skills/pentesting-4---remote-access-to-a-computer.pdf)
 
 ### Automation
 
-Automation with Bash: [Automation 1 - Bash Scripting](https://shefesh.com/wiki/fundamental-skills/automation-1---bash-scripting.pdf)
+Automation with Bash: [Automation 1 - Bash Scripting](/wiki/fundamental-skills/automation-1---bash-scripting.pdf)
 
-Automation with Python: [Automation 2 - Python Scripting](https://shefesh.com/wiki/fundamental-skills/automation-2---python-scripting.pdf)
+Automation with Python: [Automation 2 - Python Scripting](/wiki/fundamental-skills/automation-2---python-scripting.pdf)
 
 ### Misc
 
-Setting up a Virtual Machine for Practicing Linux: [Misc - Setting up a Virtual Machine](https://shefesh.com/wiki/fundamental-skills/misc---setting-up-a-virtual-machine.pdf)
+Setting up a Virtual Machine for Practicing Linux: [Misc - Setting up a Virtual Machine](/wiki/fundamental-skills/misc---setting-up-a-virtual-machine.pdf) - **Ready to view!**
 
-Recognising Common Character Encodings: [Misc - Recognising Common Encodings](https://shefesh.com/wiki/fundamental-skills/misc---recognising-common-encodings.pdf)
+Recognising Common Character Encodings: [Misc - Recognising Common Encodings](/wiki/fundamental-skills/misc---recognising-common-encodings.pdf)
