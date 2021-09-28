@@ -23,7 +23,7 @@ custom_css: sessions
         <h5>Presented by {{ item.presenter }}</h5>
         <p>{{ item.content }}</p>
 
-        {% if item.file-name != nul %}
+        {% if item.file-name != nil %}
             {% capture path %}
                 /assets/wiki/{{ item.file-name }}
             {% endcapture %}
