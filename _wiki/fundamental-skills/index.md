@@ -61,37 +61,37 @@ Where appropriate, we may also post short video demos or a link to an interactiv
 For all our sessions, especially the Give it a Go sessions, we aim to be able to teach the content to you from scratch. However, if you *want* to prepare in advance (and you really don't have to!) we recommend the following:
 
 - If you're attending the Web Hacking Give it a Go session:
-	- [Web 1 - Inspecting a Webpage](https://shefesh.com/wiki/fundamental-skills/web-1---inspecting-a-webpage.pdf)
-	- [Web 2 - Understanding HTTP Requests](https://shefesh.com/wiki/fundamental-skills/web-2---understanding-http-requests.pdf)
+	- [Web 1 - Inspecting a Webpage](/wiki/fundamental-skills/web-1---inspecting-a-webpage.pdf)
+	- [Web 2 - Understanding HTTP Requests](/wiki/fundamental-skills/web-2---understanding-http-requests.pdf)
 - If you're attending the Linux Give it a Go session:
-	- [Misc - Setting up a Virtual Machine](https://shefesh.com/wiki/fundamental-skills/misc---setting-up-a-virtual-machine.pdf)
-	- [Linux 1 - Navigating a File System](https://shefesh.com/wiki/fundamental-skills/linux-1---navigating-a-file-system.pdf)
-	- [Linux 2 - Downloading Files and Packages](https://shefesh.com/wiki/fundamental-skills/linux-2---downloading-files-and-packages.pdf)
+	- [Misc - Setting up a Virtual Machine](/wiki/fundamental-skills/misc---setting-up-a-virtual-machine.pdf)
+	- [Linux 1 - Navigating a File System](/wiki/fundamental-skills/linux-1---navigating-a-file-system.pdf)
+	- [Linux 2 - Downloading Files and Packages](/wiki/fundamental-skills/linux-2---downloading-files-and-packages.pdf)
 - To prep for the Automation session:
-	- [Automation 1 - Bash Scripting](https://shefesh.com/wiki/fundamental-skills/automation-1---bash-scripting.pdf)
-	- [Automation 2 - Python Scripting](https://shefesh.com/wiki/fundamental-skills/automation-2---python-scripting.pdf)
+	- [Automation 1 - Bash Scripting](/wiki/fundamental-skills/automation-1---bash-scripting.pdf)
+	- [Automation 2 - Python Scripting](/wiki/fundamental-skills/automation-2---python-scripting.pdf)
 - To prep for the early web hacking sessions:
-	- [Misc - Recognising Common Encodings](https://shefesh.com/wiki/fundamental-skills/misc---recognising-common-encodings.pdf)
-	- [Tools 1 - Curl](https://shefesh.com/wiki/fundamental-skills/tools-1---curl.pdf)
-	- [Web 3 - Burp Suite](https://shefesh.com/wiki/fundamental-skills/web-3---burp-suite.pdf)
-	- [Web 4 - Common Site Features](https://shefesh.com/wiki/fundamental-skills/web-4---common-site-features.pdf)
-	- [Web 5 - Web Security Overview](https://shefesh.com/wiki/fundamental-skills/web-5---web-security-overview.pdf)
-	- [Tools 2 - Feroxbuster](https://shefesh.com/wiki/fundamental-skills/tools-2---feroxbuster.pdf)
+	- [Misc - Recognising Common Encodings](/wiki/fundamental-skills/misc---recognising-common-encodings.pdf)
+	- [Tools 1 - Curl](/wiki/fundamental-skills/tools-1---curl.pdf)
+	- [Web 3 - Burp Suite](/wiki/fundamental-skills/web-3---burp-suite.pdf)
+	- [Web 4 - Common Site Features](/wiki/fundamental-skills/web-4---common-site-features.pdf)
+	- [Web 5 - Web Security Overview](/wiki/fundamental-skills/web-5---web-security-overview.pdf)
+	- [Tools 2 - Feroxbuster](/wiki/fundamental-skills/tools-2---feroxbuster.pdf)
 - To sure up your networking knowledge:
-	- [Networking 1 - IP & DNS](https://shefesh.com/wiki/fundamental-skills/networking-1---ip-&-dns.pdf)
-	- [Networking 2 - Protocols](https://shefesh.com/wiki/fundamental-skills/networking-2---protocols.pdf)
-	- [Networking 3 - Proxies](https://shefesh.com/wiki/fundamental-skills/networking-3---proxies.pdf)
-	- [Tools 3 - Nmap](https://shefesh.com/wiki/fundamental-skills/tools-3---nmap.pdf)
-	- [Tools 4 - Wireshark](https://shefesh.com/wiki/fundamental-skills/tools-4---wireshark.pdf)
+	- [Networking 1 - IP & DNS](/wiki/fundamental-skills/networking-1---ip-&-dns.pdf)
+	- [Networking 2 - Protocols](/wiki/fundamental-skills/networking-2---protocols.pdf)
+	- [Networking 3 - Proxies](/wiki/fundamental-skills/networking-3---proxies.pdf)
+	- [Tools 3 - Nmap](/wiki/fundamental-skills/tools-3---nmap.pdf)
+	- [Tools 4 - Wireshark](/wiki/fundamental-skills/tools-4---wireshark.pdf)
 - To prep for the Operating Systems session:
-	- [Linux 3 - File Permissions](https://shefesh.com/wiki/fundamental-skills/linux-3---file-permissions.pdf)
-	- [Windows 1 - Windows Command Lines](https://shefesh.com/wiki/fundamental-skills/windows-1---windows-command-lines.pdf)
+	- [Linux 3 - File Permissions](/wiki/fundamental-skills/linux-3---file-permissions.pdf)
+	- [Windows 1 - Windows Command Lines](/wiki/fundamental-skills/windows-1---windows-command-lines.pdf)
 - To prepare for hacking your first box!
-	- [Pentesting 1 - Outline of a Penetration Test](https://shefesh.com/wiki/fundamental-skills/pentesting-1---outline-of-a-penetration-test.pdf)
-	- [Tools 5 - Netcat](https://shefesh.com/wiki/fundamental-skills/tools-5---netcat.pdf)
-	- [Pentesting 2 - Basics of Shells](https://shefesh.com/wiki/fundamental-skills/pentesting-2---basics-of-shells.pdf)
-	- [Pentesting 3 - File Transfers](https://shefesh.com/wiki/fundamental-skills/pentesting-3---file-transfers.pdf)
-	- [Pentesting 4 - Remote Access to a Computer](https://shefesh.com/wiki/fundamental-skills/pentesting-4---remote-access-to-a-computer.pdf)
+	- [Pentesting 1 - Outline of a Penetration Test](/wiki/fundamental-skills/pentesting-1---outline-of-a-penetration-test.pdf)
+	- [Tools 5 - Netcat](/wiki/fundamental-skills/tools-5---netcat.pdf)
+	- [Pentesting 2 - Basics of Shells](/wiki/fundamental-skills/pentesting-2---basics-of-shells.pdf)
+	- [Pentesting 3 - File Transfers](/wiki/fundamental-skills/pentesting-3---file-transfers.pdf)
+	- [Pentesting 4 - Remote Access to a Computer](/wiki/fundamental-skills/pentesting-4---remote-access-to-a-computer.pdf)
 
 Remember, these are the fundamentals you'll need for each stage - we don't expect you to be able to own a system after reading all the pentesting lessons, but you will need to know them if you set out to do one on your own. We'll teach you skills regarding specific exploits in the relevant sessions.
 
