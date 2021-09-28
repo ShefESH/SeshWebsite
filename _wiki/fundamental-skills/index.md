@@ -61,8 +61,8 @@ Where appropriate, we may also post short video demos or a link to an interactiv
 For all our sessions, especially the Give it a Go sessions, we aim to be able to teach the content to you from scratch. However, if you *want* to prepare in advance (and you really don't have to!) we recommend the following:
 
 - If you're attending the Web Hacking Give it a Go session:
-	- [Web 1 - Inspecting a Webpage](https://shefesh.com/wiki/fundamental-skills/Web-1---Inspecting-a-Webpage.pdf)
-	- [Web 2 - Understanding HTTP Requests](https://shefesh.com/wiki/fundamental-skills/Web-2---Understanding-HTTP-Requests.pdf)
+	- [Web 1 - Inspecting a Webpage](https://shefesh.com/wiki/fundamental-skills/web-1---inspecting-a-webpage.pdf)
+	- [Web 2 - Understanding HTTP Requests](https://shefesh.com/wiki/fundamental-skills/web-2---understanding-http-requests.pdf)
 - If you're attending the Linux Give it a Go session:
 	- [Misc - Setting up a Virtual Machine](https://shefesh.com/wiki/fundamental-skills/misc---setting-up-a-virtual-machine.pdf)
 	- [Linux 1 - Navigating a File System](https://shefesh.com/wiki/fundamental-skills/linux-1---navigating-a-file-system.pdf)
