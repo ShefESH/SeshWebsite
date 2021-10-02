@@ -133,7 +133,7 @@ Using Different Windows Command Line Interfaces: [Windows 1 - Windows Command Li
 
 ### Tools
 
-Curl, a useful command line tool for making HTTP requests: [Tools 1 - Curl](/wiki/fundamental-skills/tools-1---curl.pdf)
+Curl, a useful command line tool for making HTTP requests: [Tools 1 - Curl](/wiki/fundamental-skills/tools-1---curl.pdf) - **Ready to view!**
 
 Feroxbuster, a scanner for finding hidden pages on a website: [Tools 2 - Feroxbuster](/wiki/fundamental-skills/tools-2---feroxbuster.pdf)
 
