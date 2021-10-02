@@ -105,7 +105,7 @@ Inspecting Webpages with the Developer Tools: [Web 1 - Inspecting a Webpage](/wi
 
 The Fundamentals of Web Requests: [Web 2 - Understanding HTTP Requests](/wiki/fundamental-skills/web-2---understanding-http-requests.pdf) - **Ready to view!**
 
-Learning to Use a Powerful Web Proxy: [Web 3 - Burp Suite](/wiki/fundamental-skills/web-3---burp-suite.pdf)
+Learning to Use a Powerful Web Proxy: [Web 3 - Burp Suite](/wiki/fundamental-skills/web-3---burp-suite.pdf) - **Ready to view!**
 
 Site Technologies & Features: [Web 4 - Common Site Features](/wiki/fundamental-skills/web-4---common-site-features.pdf)
 
