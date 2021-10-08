@@ -157,7 +157,7 @@ Accessing a Computer Remotely: [Pentesting 4 - Remote Access to a Computer](/wik
 
 Automation with Bash: [Automation 1 - Bash Scripting](/wiki/fundamental-skills/automation-1---bash-scripting.pdf) - **Ready to view!**
 
-Automation with Python: [Automation 2 - Python Scripting](/wiki/fundamental-skills/automation-2---python-scripting.pdf)
+Automation with Python: [Automation 2 - Python Scripting](/wiki/fundamental-skills/automation-2---python-scripting.pdf) - **Ready to view!**
 
 ### Misc
 
