@@ -105,7 +105,7 @@ Inspecting Webpages with the Developer Tools: [Web 1 - Inspecting a Webpage](/wi
 
 The Fundamentals of Web Requests: [Web 2 - Understanding HTTP Requests](/wiki/fundamental-skills/web-2---understanding-http-requests.pdf) - **Ready to view!**
 
-Learning to Use a Powerful Web Proxy: [Web 3 - Burp Suite](/wiki/fundamental-skills/web-3---burp-suite.pdf)
+Learning to Use a Powerful Web Proxy: [Web 3 - Burp Suite](/wiki/fundamental-skills/web-3---burp-suite.pdf) - **Ready to view!**
 
 Site Technologies & Features: [Web 4 - Common Site Features](/wiki/fundamental-skills/web-4---common-site-features.pdf)
 
@@ -133,7 +133,7 @@ Using Different Windows Command Line Interfaces: [Windows 1 - Windows Command Li
 
 ### Tools
 
-Curl, a useful command line tool for making HTTP requests: [Tools 1 - Curl](/wiki/fundamental-skills/tools-1---curl.pdf)
+Curl, a useful command line tool for making HTTP requests: [Tools 1 - Curl](/wiki/fundamental-skills/tools-1---curl.pdf) - **Ready to view!**
 
 Feroxbuster, a scanner for finding hidden pages on a website: [Tools 2 - Feroxbuster](/wiki/fundamental-skills/tools-2---feroxbuster.pdf)
 
@@ -155,9 +155,9 @@ Accessing a Computer Remotely: [Pentesting 4 - Remote Access to a Computer](/wik
 
 ### Automation
 
-Automation with Bash: [Automation 1 - Bash Scripting](/wiki/fundamental-skills/automation-1---bash-scripting.pdf)
+Automation with Bash: [Automation 1 - Bash Scripting](/wiki/fundamental-skills/automation-1---bash-scripting.pdf) - **Ready to view!**
 
-Automation with Python: [Automation 2 - Python Scripting](/wiki/fundamental-skills/automation-2---python-scripting.pdf)
+Automation with Python: [Automation 2 - Python Scripting](/wiki/fundamental-skills/automation-2---python-scripting.pdf) - **Ready to view!**
 
 ### Misc
 
