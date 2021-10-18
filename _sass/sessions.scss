@@ -1,4 +1,7 @@
+$backgroundColor: #1c1e29;
 $backgroundColorLight: #33354b;
+$bodyColor: #fff;
+$pinkColor: #eb3c68;
 $lightBlue: #00e7e7;
 
 .session {
@@ -8,6 +11,14 @@ $lightBlue: #00e7e7;
     width: 75%;
     min-width: 370px;
     border-radius: 4px;
+}
+
+.session_title {
+    color: $lightBlue;
+}
+
+.session_date {
+    color: $pinkColor;
 }
 
 .session h4, h5 {
