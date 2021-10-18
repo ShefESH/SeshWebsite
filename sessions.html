@@ -21,6 +21,7 @@ custom_css: sessions
     <div class="session">
         <h4>{{ item.date | date_to_string }} – {{ item.title }}</h4>
         <h5>Presented by {{ item.presenter }}</h5>
+        <h5>Location: {{ item.location }}, {{ item.time }}</h5>
         <p>{{ item.content }}</p>
 
         {% if item.file-name != nil %}
@@ -28,7 +29,7 @@ custom_css: sessions
                 /assets/wiki/{{ item.file-name }}
             {% endcapture %}
             <br>
-            <a href="{{path}}" target="_blank">{{ item.type}} session slides</a>
+            <a href="{{ path }}" target="_blank">{{ item.type}} session slides</a>
         {% endif %}
 
         {% if item.pdf-file-name != nil %}
