@@ -11,6 +11,9 @@ custom_css: sessions
 <p>For step by step instructions on accessing our sessions and recordings, <a href="/sessions/access">click here.</a></p>
 
 <div id="sessions">
+    {% assign diffWord = "TBD,Easy,Medium,Hard" | split: "," %}
+    {% assign diffColour = "grey,green,orange,red" | split: "," %}
+
     {% assign sessions = site.sessions | reverse%}
     {% for item in sessions %}
     {% assign currentSection = item.path | split: "/" %}
@@ -19,8 +22,11 @@ custom_css: sessions
     {% endif %}
     {% assign lastSection = currentSection[1] %}
     <div class="session">
-        <h4>{{ item.date | date_to_string }} – {{ item.title }}</h4>
+        <h4> <span class="session_date">{{ item.date | date_to_string }}</span> – <span class="session_title">{{ item.title }}</span></h4>
         <h5>Presented by {{ item.presenter }}</h5>
+        <h5>Location: {{ item.location }}, {{ item.time }}</h5>
+        <h5>Difficulty: <span style="color:{{ diffColour[item.difficulty] }}" >{{ diffWord[item.difficulty] }}</span></h5>
+
         <p>{{ item.content }}</p>
 
         {% if item.file-name != nil %}
@@ -28,7 +34,7 @@ custom_css: sessions
                 /assets/wiki/{{ item.file-name }}
             {% endcapture %}
             <br>
-            <a href="{{path}}" target="_blank">{{ item.type}} session slides</a>
+            <a href="{{ path }}" target="_blank">{{ item.type}} session slides</a>
         {% endif %}
 
         {% if item.pdf-file-name != nil %}
