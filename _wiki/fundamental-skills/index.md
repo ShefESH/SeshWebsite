@@ -65,7 +65,7 @@ For all our sessions, especially the Give it a Go sessions, we aim to be able to
 	- [Web 2 - Understanding HTTP Requests](/wiki/fundamental-skills/web-2---understanding-http-requests.pdf)
 - If you're attending the Linux Give it a Go session:
 	- [Misc - Setting up a Virtual Machine](/wiki/fundamental-skills/misc---setting-up-a-virtual-machine.pdf)
-	- [Linux 1 - Navigating a File System](/wiki/fundamental-skills/linux-1---navigating-a-file-system.pdf)
+	- [Linux 1 - Navigating a File System](/wiki/fundamental-skills/linux-1---navigating-the-file-system.pdf)
 	- [Linux 2 - Downloading Files and Packages](/wiki/fundamental-skills/linux-2---downloading-files-and-packages.pdf)
 - To prep for the Automation session:
 	- [Automation 1 - Bash Scripting](/wiki/fundamental-skills/automation-1---bash-scripting.pdf)
@@ -121,15 +121,15 @@ Using Proxies to View and Redirect Traffic: [Networking 3 - Proxies](/wiki/funda
 
 ### Linux
 
-The Linux File System: [Linux 1 - Navigating a File System](/wiki/fundamental-skills/linux-1---navigating-a-file-system.pdf)
+The Linux File System: [Linux 1 - Navigating a File System](/wiki/fundamental-skills/linux-1---navigating-the-file-system.pdf) - **Ready to view!**
 
-Installing New Software: [Linux 2 - Downloading Files and Packages](/wiki/fundamental-skills/linux-2---downloading-files-and-packages.pdf)
+Installing New Software: [Linux 2 - Downloading Files and Packages](/wiki/fundamental-skills/linux-2---downloading-files-and-packages.pdf) - **Ready to view!**
 
 Linux File Permissions: [Linux 3 - File Permissions](/wiki/fundamental-skills/linux-3---file-permissions.pdf)
 
 ### Windows
 
-Using Different Windows Command Line Interfaces: [Windows 1 - Windows Command Lines](/wiki/fundamental-skills/windows-1---windows-command-lines.pdf)
+Using Different Windows Command Line Interfaces: [Windows 1 - Windows Command Lines](/wiki/fundamental-skills/windows-1---windows-command-line-usage.pdf) - **Ready to view!**
 
 ### Tools
 
