@@ -5,6 +5,6 @@ services:
     image: jekyll/jekyll:latest
     command: jekyll serve --watch --force_polling --livereload --trace
     ports:
-      - 4000:4000
+      - "4000:4000"
     volumes:
       - .:/srv/jekyll
