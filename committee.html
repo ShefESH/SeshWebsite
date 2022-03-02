@@ -13,7 +13,9 @@ custom_css: committee
                 <h3>{{ item.role }}</h3>
                 <h4>{{ item.name }}</h4>
                 <p>{{ item.bio }}</p>
-                <p>{{ item.contact }}:</p>
+                {% if item.contact %}
+                    <p>{{ item.contact }}:</p>
+                {% endif %}
 
                 <!--The LinkedIn profile-->
                 {% if item.contact-name %}
@@ -61,7 +63,6 @@ custom_css: committee
                 /assets/images/committee/{{ item.image-name }}
             {% endcapture %}
             <img class="committee-picture" src="{{ path }}" alt="Picture of {{ item.name }}">
-
         </div>
     {% endfor %}
 </div>
