@@ -49,7 +49,20 @@ custom_css: sessions
             {% endif %}
             <a href="{{ pdf-path }}" target="_blank">PDF session slides</a>
         {% endif %}
+        
+        {% if item.fundamental != nil %}
+            <br>
+            <p>Fundamental Skills</p>
+            {% for skill in item.fundamental  %}
+                {% capture fundamental-path %}
+                    /wiki/fundamental-skills/{{ skill.link }}
+                {% endcapture %}
+                <a href="{{ fundamental-path }}" target="_blank"> {{skill.link}}</a>
+                <br>
+            {% endfor %}
+        {% endif %}
 
     </div>
     {% endfor %}
+    
 </div>
