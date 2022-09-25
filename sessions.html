@@ -21,7 +21,7 @@ custom_css: sessions
         <div class="heading"><h3>{{ currentSection[1] }}</h3></div>
     {% endif %}
     {% assign lastSection = currentSection[1] %}
-    <div class="session">
+    <div class="session" id="{{item.sessionRef}}">
         <h4> <span class="session_date">{{ item.date | date_to_string }}</span> – <span class="session_title">{{ item.title }}</span></h4>
         <h5>Presented by {{ item.presenter }}</h5>
         <h5>Location: {{ item.location }}, {{ item.time }}</h5>
@@ -61,6 +61,15 @@ custom_css: sessions
                 <br>
             {% endfor %}
         {% endif %}
+
+    {% if item.dependencies != nil %}
+        <br>
+        <p>Dependent Sessions (Recap may be needed)</p>
+        {% for sessiondependency in item.dependencies %}
+            <a href="#{{ sessiondependency.session[0].ref }}" > {{sessiondependency.session[1].name}}</a>
+            <br>
+        {% endfor %}
+    {% endif %}
 
     </div>
     {% endfor %}
