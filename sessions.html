@@ -63,10 +63,23 @@ custom_css: sessions
         {% endif %}
 
     {% if item.dependencies != nil %}
-        <br>
+        {% if item.fundamental == nil %}
+            <br>
+        {% endif %}
         <p>Dependent Sessions (Recap may be needed)</p>
         {% for sessiondependency in item.dependencies %}
             <a href="#{{ sessiondependency.session[0].ref }}" > {{sessiondependency.session[1].name}}</a>
+            <br>
+        {% endfor %}
+    {% endif %}
+
+    {% if item.requirements != nil %}
+        {% if item.dependencies == nil %}
+            <br>
+        {% endif %}
+        <p>Software Requirements (These will need to be installed prior to the Session)</p>
+        {% for requirement in item.requirements %}
+            <a href="{{ requirement.software[0].ref }}" > {{requirement.software[1].name}}</a>
             <br>
         {% endfor %}
     {% endif %}
