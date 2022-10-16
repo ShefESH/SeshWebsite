@@ -77,7 +77,7 @@ custom_css: sessions
         {% if item.dependencies == nil %}
             <br>
         {% endif %}
-        <p>Software Requirements (These will need to be installed prior to the Session)</p>
+        <p>Software / Link Requirements (These will need to be installed or registered prior to the Session)</p>
         {% for requirement in item.requirements %}
             <a href="{{ requirement.software[0].ref }}" > {{requirement.software[1].name}}</a>
             <br>
