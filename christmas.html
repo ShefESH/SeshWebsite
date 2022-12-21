@@ -1,0 +1,20 @@
+---
+layout: default
+title: Mince Pie Production Portal
+---
+
+Can you access the <strong>MINCE PIE PORTAL???</strong>
+
+<input type="text" name="password" id="password" placeholder="password"></input>
+<button onclick="validate()">Login</button>
+
+<script>
+    function validate() {
+        var p = document['getElementById']('password')['value'];
+        if (btoa(p) == 'c2VzaEhhcHB5Q2hyaXN0bWFzIQ==') {
+            alert('Correct password! Mince pies can be found here: https://www.amazon.co.uk/Mince-Pies/b?ie=UTF8&node=6911973031')
+        } else {
+            alert('Unfortunately you are not allowed in')
+        }
+    }
+</script>
