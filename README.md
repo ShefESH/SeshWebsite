@@ -1,6 +1,6 @@
-#Archived
+# Archived
 
-This website is no longer in use, and the repository has been archived. It can still be viewed at [insert old website link]. The new website can be found at https://github.com/ShefESH/SeshWebsiteNanoc, and viewed at https://shefesh.com.
+This website is no longer in use, and the repository has been archived. It can still be viewed at https://old.shefesh.com. The new website can be found at https://github.com/ShefESH/SeshWebsiteNanoc, and viewed at https://shefesh.com.
 
 
 
