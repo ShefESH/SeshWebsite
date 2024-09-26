@@ -1,3 +1,9 @@
+#Archived
+
+This website is no longer in use, and the repository has been archived. It can still be viewed at [insert old website link]. The new website can be found at https://github.com/ShefESH/SeshWebsiteNanoc, and viewed at https://shefesh.com.
+
+
+
 # shefesh-site
 Static site for the Sheffield Ethical Student Hackers Society
 
